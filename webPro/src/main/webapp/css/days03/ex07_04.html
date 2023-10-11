@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .box {
+        width: 30%;
+        height: 200px;
+        padding: 30px;
+        float: left;
+    }
+</style>
+<style>
+    .clearfix::After {
+        content: "";
+        display: table;
+        clear: both;
+    }
+</style>
+</head>
+<body>
+    <div class="clearfix">
+	    <!-- .box*3>p>lorem4 -->
+	    <div class="box" style="background-color: #bbb;">
+		    <p>Lorem ipsum dolor sit.</p>
+	    </div>
+	    <div class="box" style="background-color: #ccc;">
+		    <p>Rerum id consequuntur commodi.</p>
+	    </div>
+    	<div class="box" style="background-color: #ddd;">
+		    <p>Officia asperiores quo praesentium.</p>
+    	</div>
+    </div>
+	
+	<!-- p>strong{Note:}+lorem -->
+	<p>
+		<strong>Note:</strong>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur magni exercitationem fuga dolores deleniti doloremque iure quam illum sunt omnis vero et numquam dolor sequi cupiditate! Libero excepturi voluptatum quidem!
+	</p>
+	
+</body>
+</html>

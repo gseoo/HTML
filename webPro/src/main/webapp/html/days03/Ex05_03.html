@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<style>
+	p {
+		border: 1px solid gray;
+	}
+	
+	div {
+		background-color: yellow;
+	}
+</style>
+<script>
+	function hide() {
+    	document.getElementById("member").style.display = "none";
+	}
+	
+	function show() {
+    	document.getElementById("member").style.display = "block";
+	}
+</script>
+</head>
+<body>
+	<button onclick="hide();">숨기기(hide)</button>
+	<button onclick="show();">보이기(show)</button>
+	<br>
+	
+	<div id="member">
+	<span id="sp01">김성준</span><br>
+	<span id="sp02">주강민</span><br>
+	<span id="sp03">박정호</span><br>
+	<span id="sp04">신종혁</span><br>
+	<span id="sp05">이지현</span><br>
+	<span id="sp06">김정주</span><br>
+	<span id="sp07">임긍재</span><br>
+	</div>
+	
+</body>
+</html>

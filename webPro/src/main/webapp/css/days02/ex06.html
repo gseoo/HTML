@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+	body {
+		color: blue;
+		background-color: lightgrey;
+	}
+	
+	h3 {
+		background-color: black;
+		color: white;
+		
+		text-align: center;
+	}
+	
+	p#p1 {
+		border: 1px solid black;
+		padding: 5px;
+		width: 250;
+		height: 100px;
+		
+		overflow: hidden;
+	}
+	
+	div {
+		color: red;
+		direction: rtl;
+	} 
+</style>
+<style>
+	/* vertical-align 텍스트에서 이미지의 수직 정렬 */
+	img.a { vertical-align: baseline; }
+	img.b { vertical-align: text-top; }
+	img.c { vertical-align: text-bottom; }
+	img.d { vertical-align: sub; }
+	img.e { vertical-align: super; }
+</style>
+</head>
+<body>
+	<h3>css 텍스트</h3>
+	<pre>
+	[ css 텍스트 서식 지정 ]
+	1. 색상 : 표준색상, #16진수, rgb
+	2. 정렬 : 
+		text-align : 수평정렬
+	 	text-align-last
+	 	direction
+		unicode-bidi : 텍스트의 방향 변경
+	 	vertical-align : 수직 정렬
+	</pre>
+	
+	<!-- div>lorem5 -->
+	<div>Lorem ipsum dolor sit amet.</div>
+	
+	<!-- p#p1>lorem -->
+	<p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas inventore aperiam pariatur libero reprehenderit molestiae quaerat iusto assumenda nesciunt sequi repudiandae minima adipisci quasi voluptatum in accusantium dolorem alias eos!</p>
+	
+	<!-- p*5>lorem5 -->
+	<p>Lorem ipsum <img src="../images/sqpurple.gif" class="a" style="width:9px; height:9px" alt=""> dolor sit amet.</p>
+	<p>Facilis officia<img src="../images/sqpurple.gif" class="b" style="width:9px; height:9px" alt=""> laborum voluptatem fugiat.</p>
+	<p>Minima aperiam <img src="../images/sqpurple.gif" class="c" style="width:9px; height:9px" alt="">praesentium perspiciatis eveniet?</p>
+	<p>Rem voluptatibus<img src="../images/sqpurple.gif" class="d" style="width:9px; height:9px" alt=""> ut dolorem quis.</p>
+	<p>Expedita sit <img src="../images/sqpurple.gif" class="e" style="width:9px; height:9px" alt="">deleniti commodi culpa!</p>
+	
+</body>
+</html>

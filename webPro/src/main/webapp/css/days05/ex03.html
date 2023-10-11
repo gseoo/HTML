@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+	div {
+		width: 100px;
+		height: 100px;
+		background-color: rgb(173, 101, 255);
+		position: relative;
+
+		animation-name:sample;
+		animation-duration:4s;
+		animation-timing-function: linear;
+		/* animation-iteration-count: 3; */
+		/* animation-delay: 2s; */
+
+		/* normal(default), reverse, alternate */
+		animation-direction: alternate;
+
+		/* 애니메이션 시적 전, 종료 후 요소의 스타일
+			forwards : 마지막 키프레임 스타일 유지
+			backwards : 시작 키프레임 스타일 유지 */
+		animation-fill-mode: forwards;
+
+		/* animation: sample 4s linear 3s 3 alternate; */
+	}
+
+	@keyframes sample{
+		from { background-color:red; }
+		to {background-color:yellow; }
+  }
+</style>
+</head>
+<body>
+	<pre>
+		[애니메이션]
+		- javascript, Flash 애니메이션 처리 기능
+		- css를 사용해서 애니메이션 처리
+		- 애니메이션 : 하나의 스타일에서 점차 다른 스타일로 변환하는 것
+		- 키프레임(keyframe)
+		  : 특정 시간에 가지는 요소의 스타일
+		  [키프] [키프] [] [] [] [] [] [] [] -> 애니메이션 효과 
+		- @keyframes 규칙
+	</pre>
+
+	<div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+	body {
+		font-size: 2rem;;
+		font-weight: bold;
+	}
+
+	header, main, aside, footer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	header {
+		background-color: black;
+		color: white;
+	}
+
+	main {}
+
+	aside {
+		background-color: #ff9d00;
+
+	}
+
+	footer {
+		background-color: black;
+		color: white;
+	}
+</style>
+<style>
+	body {
+		width: 100vw;
+		height: 100vh;
+		margin: 0;
+		display: grid;
+		grid-template-columns: 3fr 1fr;
+		grid-template-rows: 100px auto 50px;
+		grid-template-areas: 'header header'
+							 'main aside'
+							 'footer footer';
+	}
+
+	header {grid-area: header;}
+	main {grid-area: main;}
+	asdie {grid-area: aside;}
+	footer {grid-area: footer;}
+
+</style>
+</head>
+<body>
+	<header>header</header>
+	<main>main :)</main>
+	<aside>side</aside>
+	<footer>footer</footer>
+</body>
+</html>

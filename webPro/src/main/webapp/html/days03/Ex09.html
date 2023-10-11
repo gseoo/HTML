@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+	<h3>Ex09.html</h3>
+	<pre>
+	Emmet - CSS 선택자 구문과 유사함
+	Ctrl + E
+	</pre>
+	
+	<div></div>
+	
+	<!-- 중첩연산자 > -->
+	<!-- div>ul -->
+	<div>
+		<ul></ul>
+	</div>
+	
+	<!-- div>ul>li -->
+	<div>
+		<ul>
+			<li></li>
+		</ul>
+	</div>
+	
+	
+	<!-- 중첩연산자 + : 형제, 자매 -->
+	<!-- div+ul -->
+	<div></div>
+	<ul></ul>
+	
+	<!-- div+ul>li -->
+	<div></div>
+	<ul>
+		<li></li>
+	</ul>
+	
+	<!-- div+ul+ol+p+bq -->
+	<div></div>
+	<ul></ul>
+	<ol></ol>
+	<p></p>
+	<blockquote></blockquote>
+	
+	
+	<!-- 중첩연산자 > + ^ 등반 -->
+	<!-- (div>ul>li)+p -->
+	<div>
+		<ul>
+			<li></li>
+		</ul>
+	</div>
+	<p></p>
+	
+	<!-- div>ul>li^p -->
+	<div>
+		<ul>
+			<li></li>
+		</ul>
+		<p></p>
+	</div>
+	
+	<!-- div>ul>li^^p -->
+	<div>
+		<ul>
+			<li></li>
+		</ul>
+	</div>
+	<p></p>
+	
+	
+	<!-- 문제 -->
+	<!-- div+(div>p>span)+(em>bq) -->
+	<div></div>
+	<div>
+		<p><span></span></p>
+	</div>
+	<em><blockquote></blockquote></em>
+		
+		
+	<!-- div+div>p>span^^em>bq -->
+	<div></div>
+	<div>
+		<p><span></span></p>
+	</div>
+	<em><blockquote></blockquote></em>
+	
+	<!-- div>ul>li+li+li+li -->
+	<div>
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	
+	<!-- div>ul>li*4 -->
+	<div>
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	
+	<!-- div>(ul>li*4)*2 -->
+	<div>
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	
+	<!-- div>ul*2>li*4 -->
+	<div>
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	
+	<div>
+		<header>
+			<ul>
+				<li><a href="">href=""</a></li>
+			</ul>
+		</header>
+		<footer>
+			<p></p>
+		</footer>
+	</div>
+	
+	<!-- 속성 연산자 : 속성  추가 -->
+	<!-- div#header -->
+	<div id="header"></div>
+	
+	<!-- #header.box -->
+	<div id="header" class="box"></div>
+	
+	<!-- img[width][height] -->
+	<img src="" alt="" width="" height="" />
+	
+	<!-- ul>li*5 -->
+	<ul>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+	
+	<!-- ul>li*5>{item} -->
+	<ul>
+		<li>item</li>
+		<li>item</li>
+		<li>item</li>
+		<li>item</li>
+		<li>item</li>
+	</ul>
+	
+	<!-- ul>li.box*5>{item} -->
+	<ul>
+		<li class="box">item</li>
+		<li class="box">item</li>
+		<li class="box">item</li>
+		<li class="box">item</li>
+		<li class="box">item</li>
+	</ul>
+	
+	<!-- ul>li.box*4>{item-$} -->}
+	<ul>
+		<li class="box">item-1</li>
+		<li class="box">item-2</li>
+		<li class="box">item-3</li>
+		<li class="box">item-4</li>
+	</ul>
+	
+	<!-- ul>li.box$*4>{item$$$} -->
+	<ul>
+		<li class="box1">item001</li>
+		<li class="box2">item002</li>
+		<li class="box3">item003</li>
+		<li class="box4">item004</li>
+	</ul>
+	
+	<!-- ul>li*5>{item$@-} -->}
+	<ul>
+		<li>item5</li>
+		<li>item4</li>
+		<li>item3</li>
+		<li>item2</li>
+		<li>item1</li>
+	</ul>
+	
+	<!-- ul>li*5>{item$@11} -->
+	<ul>
+		<li>item11</li>
+		<li>item12</li>
+		<li>item13</li>
+		<li>item14</li>
+		<li>item15</li>
+	</ul>
+	
+	<!-- a>{naver} -->
+	<a href="">naver</a>
+	
+	<!-- a{naver} -->
+	<a href="">naver</a>
+	
+	<!-- p>{Click}+a{here}+{ to continue} -->
+	<p>Click<a href="">here</a> to continue</p>
+	
+	
+	<hr>
+	
+	<!-- table[style='border:solid 1px gray;']>tr*3>td*4 -->
+	<table style="border:solid 1px gray;">
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+	
+	<!-- table[style='border:solid 1px gray;']>tr*3>td*4>lorem1 -->
+	<table style="border:solid 1px gray;">
+		<tr>
+			<td>Lorem.</td>
+			<td>Error!</td>
+			<td>Qui.</td>
+			<td>Aperiam.</td>
+		</tr>
+		<tr>
+			<td>Lorem.</td>
+			<td>Quasi?</td>
+			<td>Debitis!</td>
+			<td>Odit.</td>
+		</tr>
+		<tr>
+			<td>Lorem.</td>
+			<td>Voluptatibus!</td>
+			<td>Adipisci.</td>
+			<td>Facilis.</td>
+		</tr>
+	</table>
+	
+	<!-- ul>li*5>lorem10 -->
+	<ul>
+		<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ullam?</li>
+		<li>Quasi maxime perspiciatis ut minus natus obcaecati facilis consectetur qui!</li>
+		<li>Sunt quos sint cupiditate porro deleniti sit vel facere fugit.</li>
+		<li>Necessitatibus animi dolorem inventore laborum facere iure sunt repellendus amet!</li>
+		<li>Iusto nulla quam quos expedita cum sequi impedit amet deserunt!</li>
+	</ul>
+	
+	
+	</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+	p {
+		border: 1px solid gray;
+	}
+</style>
+<script>
+</script>
+</head>
+<body>
+	<button>숨기기(hide)</button>
+	<button>보이기(show)</button>
+	<br>
+	<!-- (span[id=sp$$]+br)*7 -->
+	<span id="sp01">김성준</span><br>
+	<span id="sp02">주강민</span><br>
+	<span id="sp03">박정호</span><br>
+	<span id="sp04">신종혁</span><br>
+	<span id="sp05">이지현</span><br>
+	<span id="sp06">김정주</span><br>
+	<span id="sp07">임긍재</span><br>
+	<br>
+	
+	<script>
+	// js -> jquery 사용해서 수정
+	// jQuery 객체 얻어오기
+	// <button>숨기기(hide)</button>
+	$("button").first().click(function(){
+		//alert("숨기기 버튼 클릭 확인");
+		$("span").hide();
+	});
+	$("button").last().click(function(){
+		//alert("보이기 버튼 클릭 확인");
+		$("span").show();
+	});
+	</script>
+	
+</body>
+</html>

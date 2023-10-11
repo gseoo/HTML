@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link href="ex02_style.css" rel="stylesheet">
+<style>
+	* {
+		padding: 0;
+		margin: 0;
+	}
+	h1 {
+		color: red;
+		text-align: center;
+	}
+	
+	/*
+	h1{border:1px solid grapy;}
+	h2{border:1px solid grapy;}
+	h3{border:1px solid grapy;}
+	h4{border:1px solid grapy;}
+	h5{border:1px solid grapy;}
+	h6{border:1px solid grapy;}
+	*/
+	
+	/* 그룹화 선택자, 연산자 */
+	h1, h2, h3, h4, h5, h6 {
+		border:1px solid gray;
+	}
+	
+	/* #아이디명 */
+	#three {
+		color: blue;
+		text-align: center;
+		border: solid 1px gray;
+	}
+	
+	/* .클래스명 */
+	.first {
+		background-color: yellow;
+	}
+	
+	p.first {
+		background-color: blue;
+	}
+	
+	/* 동일한 경우 최신 규칙이 우선 */
+	h4 {color: red;}
+	h4 {color: blue;}
+</style>
+</head>
+<body>
+
+	<h1 class="first">hello World</h1>
+	<h2>hello World</h2>
+	<h3 id="three">hello World</h3>
+	<!-- 인라인식 스타일 적용 방식 -->
+	<h4 style="color: red">hello World</h4>
+	<h5>hello World</h5>
+	<h6>hello World</h6>
+	
+	<!-- p>h1>lorem3 -->
+	<p>
+		<h1>Lorem ipsum dolor.</h1>
+	</p>
+	
+	<!-- p*5>lorem7 -->
+	<p class="first">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+	<p>Expedita iusto reprehenderit dolores quis quidem suscipit.</p>
+	<p>Nisi necessitatibus voluptas asperiores quasi minima dignissimos.</p>
+	<p>Praesentium dolore vero ad temporibus officia doloremque.</p>
+	<p>Nobis officia accusantium ullam enim voluptatibus amet.</p>
+	
+	<!-- div*5>lorem5 -->
+	<div class="first box">Lorem ipsum dolor sit amet.</div>
+	<div>Facere explicabo omnis eveniet quia!</div>
+	<div>Suscipit sint similique iste illum!</div>
+	<div>Omnis nam magni ut cum.</div>
+	<div>Molestias sint eius cum maxime!</div>
+	
+</body>
+</html>

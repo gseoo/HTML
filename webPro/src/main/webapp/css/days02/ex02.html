@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	
+	div {
+		border: 1px solid black;
+		/*
+		margin-top: 25px;
+		margin-right: 50px;
+		margin-bottom: 75px;
+		margin: 25px 50px 75px 100px;
+		*/
+		
+		/* margin: 25px;
+		margin: 25px, 25px, 25px, 25px; */
+		
+		/* margin: 25px 50px;
+		margin: 25px, 50px, 25px, 50px; */
+		
+		/* margin: 25px 50px 75px;
+		margin: 25px 50px 75px 50px; */
+	}
+	
+	/* 가운데 정렬 : margin: 0 auto; */
+	div.box {
+		border: 1px solid red;
+		width: 300px;
+		margin: 0 auto;
+	}
+</style>
+</head>
+<body>
+	<h3>html 여백(margin)</h3>
+	<pre>
+	여백(margin)
+	테두리(border)
+	패딩(padding)
+	
+	margin: 10px -> 약식
+	
+	margin-top: 속성값;
+	margin-right: 속성값;
+	margin-bottom: 속성값;
+	margin-left: 속성값
+	
+	속성값
+	- auto : 브라우저가 여백을 자동으로 설정
+	- px, pt, cm 등 길이 단위
+	- 부모 요소를 기준으로 % 단위
+	- inherit() : 상속 - 부모 여백을 자식한테 그대로 설정
+	
+	margin-top: 25px;
+	margin-bottom: 75px;
+	이라도 100px이 아님 75px이 됨 (여백의 붕괴)
+	</pre>
+	
+	<!-- div*3>lorem -->
+	<div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta rem nemo quisquam porro culpa cumque eligendi aliquam ipsum sit doloremque autem blanditiis iste dolore molestias corporis amet in veniam eveniet.</div>
+	<div>Voluptatibus aspernatur natus odit quaerat accusamus ad. Natus quae sint suscipit explicabo excepturi quibusdam ipsa doloremque eius necessitatibus vel recusandae quo architecto quam vero voluptatem fugiat molestiae animi quos officiis.</div>
+	<div>Distinctio porro saepe laborum delectus pariatur perspiciatis eius tempora quasi vel rerum atque harum sed incidunt. Amet eos provident dolores consequatur illo dolor ex ea ipsam blanditiis quidem quas sunt?</div>
+</body>
+</html>

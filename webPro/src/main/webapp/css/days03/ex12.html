@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+  p::first-letter {
+    color: red;
+    font-variant: small-caps;
+  }
+
+  p::first-line {
+    color: blue;
+    font-size: x-large;
+  }
+
+  h3::before {
+    content: url('../images/arr.gif');
+  }
+
+  h3::after {
+    content: url('../images/arr.gif');
+  }
+
+  ::selection {
+    color: red;
+    background-color: yellow;
+  }
+</style>
+</head>
+<body>
+  <h3>의사요소 설명</h3>
+  <pre>
+    :의사클래스 - :hover  :focus  :???
+
+
+    ::의사요소 (지정된 일부분) - 스타일 지정된 
+      일부분?
+        1) 요소의 첫 글자, 줄 + 스타일 지정
+        2) 요소의 내용의 앞, 뒤 + 어떤 컨텐츠 삽입
+
+      형식) selector::의사요소 {}
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Quae culpa atque corrupti qui dolore voluptatibus modi reprehenderit
+         quaerat porro asperiores! Consequatur maiores quia cum quisquam 
+         placeat! Unde ratione excepturi incidunt.</p>
+
+
+  </pre>
+</body>
+</html>

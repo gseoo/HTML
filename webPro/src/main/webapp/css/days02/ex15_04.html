@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+	div.stick_test {
+		border: 2px solid #4caf50;
+		background-color: #cae8ca;
+		padding: 3px;
+		text-align: center;
+		
+		/* 사용자가 스크롤 시 위치 고정 */
+		position: sticky ;
+		position: -webkit-sticky; /*사파리에서 사용 */
+		top:0;
+	}
+	
+	div:last-of-type {
+		padding-bottom: 2000px;
+		border: 1px solid gray;
+	}
+</style>
+</head>
+<body>
+	<!-- p>lorem^.stick_test>{hello world}^div>p*3>lorem -->
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum accusantium autem sint eius error architecto totam eligendi eum blanditiis dolorem fugiat commodi cum minus modi ab a saepe deleniti possimus!</p>
+	<div class="stick_test">hello world</div>
+	<div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae culpa quaerat necessitatibus quos unde iste delectus laborum sed quas dolor totam ipsum aspernatur repudiandae deleniti ab voluptas laboriosam! Eveniet quis.</p>
+		<p>Dolorem quod quis suscipit earum consectetur unde debitis est qui voluptatibus cumque provident ea recusandae fugiat esse dolorum dolore minus odit libero necessitatibus et adipisci quia quae odio impedit ipsum?</p>
+		<p>Voluptate incidunt sit quae totam corporis eligendi minima minus id sunt porro optio reiciendis ab labore velit fuga culpa nemo necessitatibus eveniet et earum deleniti facilis rem repellendus delectus modi?</p>
+	</div>
+</body>
+</html>

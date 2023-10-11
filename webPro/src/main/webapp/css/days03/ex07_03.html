@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+    div {
+        border: 3px solid #4caf50;
+        padding: 5px;
+    }
+
+    div > img.img1 {
+        float: left;
+    }
+</style>
+<style>
+    /* .clearfix {
+        content: "";
+        display: table;
+        clear: both;
+    } */
+
+    .clearfix {
+        overflow: auto;
+    }
+</style>
+</head>
+<body>
+    <pre>
+        float 되고 있는 이미지가 부모(div) 요소보다 크면 overflow 발생
+
+        이 문제를 해결?
+    </pre>
+
+    <!-- div>img.img1+lorem12 -->
+	<div class="clearfix"> 
+		<img src="../images/pineapple.jpg" alt="" class="img1" width="170" height="170" />
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta voluptas sunt provident.
+	</div>
+</body>
+</html>

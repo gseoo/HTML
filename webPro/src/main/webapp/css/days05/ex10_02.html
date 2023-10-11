@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+	.grid-container {
+		background-color: green;
+		padding: 10px;
+
+		display: grid;
+		grid-template-columns: 50px 50px 50px;
+		gap: 10px;
+
+		/*
+		justify-content: space-between;
+		justify-content: space-around; 
+		justify-content: center;
+		justify-content: start;
+		justify-content: end;
+		*/
+
+		height: 400px;
+		align-content: center;
+	}
+
+	.grid-container > div {
+		background-color: #f1f1f1;
+		text-align: center;
+		padding: 20px 0;
+		font-size: 30px;
+	}
+</style>
+</head>
+<body>
+	<!-- .grid-container>div*6>{$} -->
+	<div class="grid-container">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+	</div>
+</body>
+</html>

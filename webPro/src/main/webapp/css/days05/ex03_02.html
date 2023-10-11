@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+	div {
+		width: 100px;
+		height: 100px;
+		background-color: red;
+		position: relative;
+
+		animation-name: sample;
+		animation-duration: 3s;
+		animation-delay: 2s;
+		animation-fill-mode: both;
+	}
+
+	@keyframes sample {
+		from {top: 0px; background-color: yellow;}
+		to {top: 200px; background-color: blue;}
+	}
+</style>
+</head>
+<body>
+	<div></div>
+</body>
+</html>

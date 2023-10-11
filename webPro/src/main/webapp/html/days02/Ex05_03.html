@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<style>
+	a {
+		background-color: #f44336;
+		color: white;
+		text-decoration: none;
+		padding: 15px;
+	}
+	
+	a:hover{
+		background-color: red;
+	}
+</style>
+<script>
+	function bookmark(){
+		var url = "Ex05_02.html#desc";
+		//window.location.href = url;
+		location.href = url;
+	}
+</script>
+</head>
+<body>
+	<h3>Ex05_03.html</h3>
+	<pre>
+		[a]
+		- javascript 처리
+		- js 경고창 띄우기
+		window		BOM
+		window.alert("경고 알림");
+		- js 문자열 "" or ''
+	</pre>
+	
+	<a href='javascript:window.alert("경고창");'>경고창 띄우기</a>
+	<br>
+	<br>
+	<br>
+	<br>
+	<a href="javascript:alert('경고창');">경고창 띄우기</a>
+	<br>
+	<br>
+	<br>
+	<br>
+	<a href="javascript:bookmark();">북마크 구현 설명 이동</a>
+	
+</body>
+</html>

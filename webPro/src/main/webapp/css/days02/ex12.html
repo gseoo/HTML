@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+	ul li {
+		/* background-color: red; */
+		display: inline;
+	}
+</style>
+<style>
+	span {
+		background-color: blue;
+		width: 100px;
+		display: inline-block;
+	}
+</style>
+<style>
+	a {
+		display: block;
+		border: 1px solid gray;
+	}
+</style>
+</head>
+<body>
+	<pre>
+	[display 속성]
+	1. 레이아웃(배치)을 제어하기 위한 가장 중요한 css 속성
+	2. 기본값: block, inline
+	   block - div, p, header, hr, hn 등
+	   특징) 항상 새로운 라인에서 시작
+	   		부모 너비의 100%가 잡힘
+	   		
+	   inline - span, a, img 등
+	   특징) 새로운 라인에서 시작하지 않음
+	   		너비는 필요한 내용(content)만큼만 잡힘
+	</pre>
+	
+	<!-- ul>li*3>a[href=#]>lorem1 -->
+	<ul>
+		<li><a href="#">Lorem.</a></li>
+		<li><a href="#">Rerum!</a></li>
+		<li><a href="#">Maiores.</a></li>
+	</ul>
+	
+	<!-- inline -> block 변경 -->
+	<!-- span*3>lorem1 -->
+	<span>Lorem.</span>
+	<span>Quaerat.</span>
+	<span>Corporis.</span>
+	
+	<hr>
+	
+	<!-- a[href=#]*3>lorem1 -->
+	<a href="#">Lorem.</a>
+	<a href="#">Sed.</a>
+	<a href="#">Dolore?</a>
+	
+</body>
+</html>

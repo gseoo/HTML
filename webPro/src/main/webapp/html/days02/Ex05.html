@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<style>
+	a {
+		color: black;
+		text-decoration: none;
+	}
+	
+	/*마우스를 올린 경우*/
+	a:hover {
+		color:red;
+		text-transform: uppercase;
+		text-decoration: line-through;
+	}
+</style>
+</head>
+<body>
+	<h3>html 링크</h3>
+	<pre>
+		[a]
+		- 링크를 클릭하면 다른 페이지로 이동
+		- 마우스를 올리면 작은 손 모양으로 변함
+		- 링크 : 텍스트, 이미지, 기타 html 요소 사용
+	</pre>
+	
+	<a href="http://www.naver.com">naver</a>
+	<br>
+	<!-- 절대경로 -->
+	<a href="http://localhost/webPro/html/days01/Ex03.html">days01.ex03.html</a>
+	
+	<!-- 
+	context root = context path - webPro 웹 프로젝트명
+	
+	웹서버/웹프로젝트/src/main/webapp 폴더까지 연결
+	-->
+	
+	<!-- 상대경로 -->
+	<!-- 기준경로 : http://local/webPro/html/days02/ -->
+	<!-- 기준경로 : ../ == http://local/webPro/html/ -->
+	<!-- 기준경로 : ../../ == http://local/webPro/ -->
+	<!-- 기준경로 : ./ == http://local/webPro/html/days02/ -->
+	<!-- 기준경로 : ./test == http://local/webPro/html/days02/test -->
+	<br>
+	<a href="../days01/Ex03.html">days01.ex03.html</a>
+	
+	<br>
+	<a href="./../days01/Ex03.html">days01.ex03.html</a>
+	
+	<hr>
+	
+	<!-- days02/Ex01.html 절대경로, 상대경로 -->
+	<a href="http://localhost/webPro/html/days02/Ex01.html">days02.ex01.html - 절대경로</a>
+	<br>
+	<a href="./Ex01.html">days02.ex01.html - 상대경로</a>
+	<br>
+	<a href="Ex01.html">days02.ex01.html - 상대경로</a>
+	<br>
+	
+	<!-- / 기억!! -->
+	<a href="/Ex01.html">days02.ex01.html - 기억하기</a>
+	<!-- http://localhost/Ex01.html -->
+	
+	<hr>
+	<!-- index.html 상대경로 링크 - href 속성 -->
+	<a href="../../index.html">index.html</a>
+	
+	<!-- 
+	링크 브라우저 표시
+	1) 밑줄 + 보라색 : 방문한 링크
+	2) 밑줄 + 파란색 : 방문하지 않은 링크
+	3) 밑줄 + 빨간색 : 방문하려고 클릭하는 순간
+	
+	CSS를 사용해서 변경 가능
+	 -->
+	<br>
+	<a href="Ex05_02.html#desc">책갈피 구현 설명</a>
+</body>
+</html>

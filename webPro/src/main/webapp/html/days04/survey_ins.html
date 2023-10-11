@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script
+   src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+   table { border-collapse: collapse;}
+   td { border: 1px solid black; }
+   .title {
+      text-align: center;
+      font-weight: bold;
+   }
+</style>
+</head>
+<body>
+   <h3>▶ 설문 작성</h3>
+   <div>
+   <table style="border:1px solid gray; width:100%; height:400px;">
+      <tr>
+         <td class="title">질문</td>
+         <td><input type="text" style="width:90%"></td>
+      </tr>
+      
+      <tr>
+         <td class="title">시작일</td>
+         <td><input type="date"></td>
+      </tr>
+      
+      <tr>
+         <td class="title">종료일</td>
+         <td><input type="date"></td>
+      </tr>
+      
+      <tr>
+         <td class="title">항목수</td>
+         <td>
+            <select>
+               <option value="1">1</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4</option>
+               <option value="5">5</option>
+            </select>
+         </td>
+      </tr>
+      
+      <tr>
+         <td rowspan="5" class="title">항목</td>
+         <td>1. 레인보우샤베트</td>
+      </tr>
+      <tr>
+         <td>2. 엄마는 외계인</td>
+      </tr>
+      <tr>
+         <td>3. 체리쥬빌레</td>
+      </tr>
+      <tr>
+         <td>4. 뉴욕치즈케이크</td>
+      </tr>
+      <tr>
+         <td>5. 아몬드 봉봉</td>
+      </tr>
+   
+   </table>
+   </div>
+   <br>
+   <button style="width:45px; height:40px; float:right;">취소</button>
+   <button style="width:45px; height:40px; float:right;">확인</button>
+   
+</body>
+</html>

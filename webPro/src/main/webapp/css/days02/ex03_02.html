@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+	* {
+		box-sizing: border-box;
+	}
+	div {
+		width: 300px;
+		border: 1px solid black;
+		
+		margin-bottom: 10px;
+	}
+	
+	.ex01 { background: yellow; }
+	
+	.ex02 { 
+		background: lightblue;
+		
+		/* 패딩 설정하니까 너비 증가함 */ 
+		/* 1+50+300+50+1=402px */
+		padding: 50px;
+		
+		/* box-sizing : 패딩을 설정하더라도 실제 요소의 너비를 유지하도록 하는 속성 */
+		box-sizing: border-box;
+	}
+</style>
+</head>
+<body>
+	<!-- .ex$$*2>{This div 300px} -->
+	<div class="ex01">This div 300px</div>
+	<div class="ex02">This div 300px</div>
+</body>
+</html>

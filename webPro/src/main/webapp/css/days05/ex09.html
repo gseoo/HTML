@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+* {
+	box-sizing: border-box;
+}
+
+.flex-container {
+	font-size: 30px;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.flex-container .flex-item-left {
+	background-color: #f1f1f1;
+	padding: 10px;
+	flex: 50%; /* 약식 속성 flex-grow shrink basis */
+}
+
+.flex-container .flex-item-right {
+	background-color: green;
+	padding: 10px;
+	flex: 50%;
+}
+</style>
+<style>
+@media ( max-width :800px) {
+	.flex-container  .flex-item-left, .flex-container  .flex-item-right {
+		flex: 100%;
+	}
+}
+</style>
+</head>
+<body>
+	<h3>반응형 flexbox</h3>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quo
+		fugiat cumque illo tempora architecto deserunt odio facere ratione
+		temporibus, exercitationem suscipit possimus accusantium quisquam, ut
+		dolores ipsam error laboriosam.</p>
+
+	<!-- .flex-container>.flex-item*2>{$} -->
+	<div class="flex-container">
+		<div class="flex-item-left">1</div>
+		<div class="flex-item-right">2</div>
+	</div>
+
+</body>
+</html>

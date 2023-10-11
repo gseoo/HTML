@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+	ul, ol {
+		
+	}
+	
+	ul.first {
+		/* list-style-type: lower-roman; */
+		list-style-image: url('../images/arr.gif');
+		
+		list-style-position: inside;
+	}
+	
+	li {
+		background-color: green;
+	}
+	
+	ul, ol {
+		list-style-type: none;
+	}
+</style>
+</head>
+<body>
+	<h3>ul, ol, li, css 목록</h3>
+	<!-- ul.first>li*5>lorem1 -->
+	<ul class="first">
+		<li>Lorem.</li>
+		<li>Esse.</li>
+		<li>Fugit!</li>
+		<li>Aperiam.</li>
+		<li>Perferendis!</li>
+	</ul>
+	
+	<!-- ol.first>li*5>lorem1 -->
+	<ol class="first">
+		<li>Lorem.</li>
+		<li>Repellat?</li>
+		<li>Quaerat!</li>
+		<li>Quisquam!</li>
+		<li>Cum.</li>
+	</ol>
+	
+</body>
+</html>

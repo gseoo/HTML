@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<style>
+	body, html {
+		padding: 0;
+		margin: 0;
+	}
+	
+	ul {
+		background-color: #333;
+		border: 2px solid gray;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		
+		overflow: hidden;
+	}
+	
+	ul li{
+/* 		border: 1px solid yellow; */
+	}
+	
+	ul li a{
+		color: white;
+		text-decoration: none;
+/* 		border: 1px solid red; */
+		/*width: 100%; 이거 안 먹음 : a가 인라인모드이기 때문에 -> 블럭모드로 변경시키면 가능*/
+		display: block;
+		text-align: center;
+		
+		padding: 16px;
+	}
+	
+	ul li a:hover{
+		color: orange;
+		background-color: #111;
+	}
+	
+	ul li:nth-child(1) {
+		background-color: red;
+	}
+	
+	ul li {
+		float: left;
+	}
+	
+</style>
+</head>
+<body>
+	asdf
+	<!-- ul>li*4>a[href=#] -->
+	<ul>
+  		<li><a href="#">Home</a></li>
+  		<li><a href="#">News</a></li>
+  		<li><a href="#">Contact</a></li>
+ 		<li><a href="#">About</a></li>
+	</ul>
+</body>
+</html>

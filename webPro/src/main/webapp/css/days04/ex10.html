@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+	h1 {
+		/* text-shadow: 2px 2px red; */
+		/* text-shadow: 2px 2px 5px red; */
+		/* text-shadow: 0 0 3px red, 0 0 10px blue; */
+
+		color: white;
+		text-shadow: -1px 0 black, 0 -1px black, 1px 0 black, 0 1px black;
+	}
+
+	p {
+		width:  300px;
+		height: 100px;
+		background-color: yellow;
+
+		/* inset : 외부 그림자에서 시작해서 내부 그림자로 변경 */
+		/* box-shadow: 10px 10px 5px 12px lightblue inset; */
+
+		box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green;
+	}
+</style>
+</head>
+<body>
+	<pre>
+	[그림자 효과]
+	1. 박스 그림자 효과 (box-shadow)
+	2. 텍스트 그림자 효과 (text-shadow)
+	</pre>
+
+	<h1>텍스트 그림자 효과(text-shadow)</h1>
+
+	<p>텍스트 그림자 효과(text-shadow)</p>
+</body>
+</html>
