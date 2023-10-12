@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+   p {
+      font-size: 50px;
+      font-weight: 500;
+   }
+</style>
+</head>
+<body>
+   <div>
+         <input type="range" min="1" max="100" value="50">
+         <span></span>
+   </div>
+   <p>홍길동</p>
+
+   <script>
+      // javascript
+      document.querySelector("span").innerHTML = document.querySelector("input").value;
+      document.querySelector("input").oninput = function() {
+         document.querySelector("span").innerHTML = this.value;
+         document.querySelector("p").style.fontSize = this.value + "px";
+      };
+      
+
+      // jquery
+      $("span").text($("input").val());
+      $("input").on("input", function() {
+         $("span").text($(this).val());
+         $("p").css("fontSize", $(this).val() + "px");
+      });
+
+   </script>
+</body>
+</html>

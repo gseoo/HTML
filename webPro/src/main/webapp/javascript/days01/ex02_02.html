@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+<script src="/webPro/resources/cdn-main/example.js"></script>
+<style>
+ span.material-symbols-outlined{
+    vertical-align: text-bottom;
+ }
+</style>
+</head>
+<body onload="window_init()" onunload="">
+	<header>
+  		<h1 class="main">
+    		<a href="#">GyeongSeo HOme</a>
+  		</h1>
+  		<ul>
+  			<li><a href="#">로그인</a></li>
+  			<li><a href="#">회원가입</a></li>
+  		</ul>
+	</header>
+	<h3>
+		<span class="material-symbols-outlined">view_list</span>
+		javascript days01
+	</h3>
+	<div>
+  		<xmp class="code">
+    [html 콘텐츠 변경]
+    시작태그
+    닫기태그
+    요소(Element)
+    내용(content)
+  		</xmp>
+  		<input autofocus="autofocus" type="text" id="txtContent" class="long" placeholder="content 입력">
+  		<button class="add" onclick="printContent()">실행</button>
+  		<div id="demo">결과 : </div>
+  		
+  		
+	</div>
+	<script>
+		var box = document.querySelector("#demo");
+		var txtbox = document.querySelector("#txtContent");
+		//box.value = "내용";
+		//txtbox.value = "내용"
+		
+		//box.innerText = "내용";
+		//box.innerHTML = "<span style='color:red'><b>내용(Content)</b></span>";
+		//box.innerText += "<span style='color:red'><b>내용(Content)</b></span>";
+	</script>
+	<script>
+		function printContent() {
+			var content = txtbox.value;
+			console.log(content);
+			box.innerText += "<span style='color:red'><b>" + content + "(Content)</b></span>";
+			box.innerText = "결과 : <span style='color:red'><b>"+content+"</b></span>";
+			/*
+			txtbox.value = "";
+			txtbox.focus();
+			*/
+			
+			txtbox.select();
+		}
+		
+		function window_init() {
+			//
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+<script src="/webPro/resources/cdn-main/example.js"></script>
+<style>
+ span.material-symbols-outlined{
+    vertical-align: text-bottom;
+ }
+</style>
+</head>
+<body>
+	<header>
+  		<h1 class="main">
+    		<a href="#">GyeongSeo HOme</a>
+  		</h1>
+  		<ul>
+  			<li><a href="#">로그인</a></li>
+  			<li><a href="#">회원가입</a></li>
+  		</ul>
+	</header>
+	<h3>
+		<span class="material-symbols-outlined">view_list</span>
+		javascript days01
+	</h3>
+	<div>
+  		<xmp class="code">
+    [html 콘텐츠 변경]
+    시작태그
+    닫기태그
+    요소(Element)
+    내용(content)
+  		</xmp>
+  		<input type="text" id="txtContent" class="long" placeholder="content 입력">
+  		<button class="add">실행</button>
+  		<div id="demo">결과 : </div>
+	</div>
+	
+	<script>
+		$(document).ready(function() {
+			//$("#txtContent").focus();
+			$("#txtContent").val("홍길동").select();
+			$("#demo").html("result : ");
+			
+			// 실행버튼 클릭
+			/*
+			$("button.add").click(function() {
+				var content = $("#txtContent").val();
+				$("#demo").html("result : <span style='color:red'><b>"+content+"</b></span>");
+				//$("#demo").text("result : <span style='color:red'><b>"+content+"</b></span>");
+				
+				$("#txtContent").select();
+			});
+			*/
+			
+			// 엔터 누르기
+			$("#txtContent").keydown(function(key) {
+				if(key.keyCode == 13) {
+					var content = $("#txtContent").val();
+					$("#demo").html("result : <span style='color:red'><b>"+content+"</b></span>");
+					$("#txtContent").select();
+				}
+			});
+			 
+			
+		});
+	</script>
+</body>
+</html>
