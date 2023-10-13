@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+<script src="/webPro/resources/cdn-main/example.js"></script>
+<style>
+	span.material-symbols-outlined{
+		vertical-align: text-bottom;
+ 	}
+</style>
+</head>
+<body>
+	<header>
+  		<h1 class="main">
+    		<a href="#">GyeongSeo Home</a>
+  		</h1>
+  		<ul>
+  			<li><a href="#">로그인</a></li>
+  			<li><a href="#">회원가입</a></li>
+  		</ul>
+	</header>
+	<h3>
+		<span class="material-symbols-outlined">view_list</span>
+		javascript days00
+	</h3>
+	<div>
+  		<xmp class="code">
+    		
+  		</xmp>
+		<input type="text" id="age" placeholder="나이 입력" value="20">
+		<button>실행</button>
+		<p id="demo"></p>
+	</div>
+
+	<script>
+	 	document.querySelector("button").onclick = ()=>{
+		 let age = document.querySelector("#age").value;
+		 // alert( typeof age); // string "20"
+		 // "20" -> 20  js string->number 함수
+		 // parseInt() / Number() / paresFloat()
+		 
+		 // age >= 20  "old"
+		 // age <  20  "young"
+		 // 문자열     "입력잘못"
+		 
+		 // 1) js 정규표현식
+		 // isNaN()
+		 let result ;
+		 if (  isNaN( age )  ) {
+			result = "입력 잘못";
+			document.querySelector("#age").select();
+			
+		} else {
+			// "23" 비교할 때  자동 숫자 변환
+	        result = age >= 20 ? "old" :	"young";
+		}
+		 
+		 document.querySelector("#demo").innerHTML = result;
+	 	}
+	</script>
+</body>
+</html>

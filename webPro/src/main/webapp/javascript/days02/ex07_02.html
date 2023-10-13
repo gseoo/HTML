@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+<script src="/webPro/resources/cdn-main/example.js"></script>
+<style>
+	span.material-symbols-outlined{
+		vertical-align: text-bottom;
+ 	}
+</style>
+</head>
+<body>
+	<header>
+  		<h1 class="main">
+    		<a href="#">GyeongSeo Home</a>
+  		</h1>
+  		<ul>
+  			<li><a href="#">로그인</a></li>
+  			<li><a href="#">회원가입</a></li>
+  		</ul>
+	</header>
+	<h3>
+		<span class="material-symbols-outlined">view_list</span>
+		javascript days00
+	</h3>
+	<div>
+  		<xmp class="code">
+	[js 연산자]
+	4. 문자열연결연산자 : +  concat()
+	5. 비교연산자 : ==  !=  >  <  >=  <=  ===  !==
+	6. 논리연산자 : &&  ||  !
+	7. 비트연산자 :  &  |  ^  ~  <<  >>  >>>
+	8. 삼항연산자 : 항1 ? 항2 : 항3
+	9. 등등 : typeof  instanceof
+  		</xmp>
+	</div>
+
+	<script>
+		let name = "홍길동";
+		let age = 23;
+		let msg = name + ", " + age;
+		document.write(msg + "<br>"); // 홍길동, 23
+	</script>
+	<hr>
+	<script>
+		let x = 100;
+		let y = 200;
+		document.write(x > y); document.write("<br>"); // false
+		document.write(x < y); document.write("<br>"); // true
+		document.write(x >= y); document.write("<br>"); // false
+		document.write(x <= y); document.write("<br>"); // true
+		document.write(x == y); document.write("<br>"); // false
+		document.write(x != y); document.write("<br>"); // true
+	</script>
+	<hr>
+	<script>
+		let n1 = "홍길동", n2 = "홍길동";
+		document.write(n1 == n2); document.write("<br>"); // true
+		document.write(n1 != n2); document.write("<br>"); // false
+	</script>
+	<hr>
+	<script>
+		let a = 5;
+		let b = "5";
+		alert(typeof x); // number
+		alert(typeof y); // string
+
+		document.write(a == b); document.write("<br>"); // true
+		document.write(a === b); document.write("<br>"); // false
+		document.write(a != b); document.write("<br>"); // false
+		document.write(a !== b); document.write("<br>"); // true
+	</script>
+	<hr>
+	<script>
+		document.write(5 + 5); document.write("<br>"); // 10
+		document.write(5 + "5"); document.write("<br>"); // 55
+		document.write("admin" + 5); document.write("<br>"); // admin5
+	</script>
+</body>
+</html>

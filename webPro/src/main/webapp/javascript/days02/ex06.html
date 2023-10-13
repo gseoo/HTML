@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+<script src="/webPro/resources/cdn-main/example.js"></script>
+<style>
+	span.material-symbols-outlined{
+		vertical-align: text-bottom;
+ 	}
+</style>
+</head>
+<body>
+	<header>
+  		<h1 class="main">
+    		<a href="#">GyeongSeo Home</a>
+  		</h1>
+  		<ul>
+  			<li><a href="#">로그인</a></li>
+  			<li><a href="#">회원가입</a></li>
+  		</ul>
+	</header>
+	<h3>
+		<span class="material-symbols-outlined">view_list</span>
+		javascript days00
+	</h3>
+	<div>
+  		<xmp class="code">
+	1. var : 2015년 이전 사용
+	2. let : const 제외한 나머지 경우
+	3. const : 상수 (값을 변경해서는 안 되는 경우)
+  		</xmp>
+	</div>
+	
+	<script>
+		// js 변수 사용 4가지 방법 : X, var, let, const
+
+		/*
+		//[1] 변수 선언 X
+		x = 10;
+		y = 20;
+		z = x + y;
+
+		X = 100;
+		z = x;
+		document.write(z);
+		*/
+	</script>
+
+	
+	<script>
+		/*
+		// [2] var
+		var x = 10;
+		var y = 20;
+		var z = x + y;
+		document.write(z);
+		*/
+	</script>
+
+	<script>
+		/*
+		// [3] let
+		let x = 10;
+		let y = 20;
+		let z = x + y;
+		document.write(z);
+		*/
+	</script>
+
+	<script>
+		
+		// [3] const
+		const x = 10;
+		const y = 20;
+		const z = x + y;
+		document.write(z);
+		
+	</script>
+
+	<script>
+		/*
+		const pi = 3.141592;
+		let name = "홍길동";
+		let age = 23;
+		*/
+	</script>
+
+	<script>
+		// 변수만 선언하고 초기화 X
+		var name;
+		alert(name); // undefined
+	</script>
+
+</body>
+</html>

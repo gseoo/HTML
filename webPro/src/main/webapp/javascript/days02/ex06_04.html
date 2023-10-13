@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+<script src="/webPro/resources/cdn-main/example.js"></script>
+<style>
+	span.material-symbols-outlined{
+		vertical-align: text-bottom;
+ 	}
+</style>
+</head>
+<body>
+	<header>
+  		<h1 class="main">
+    		<a href="#">GyeongSeo Home</a>
+  		</h1>
+  		<ul>
+  			<li><a href="#">로그인</a></li>
+  			<li><a href="#">회원가입</a></li>
+  		</ul>
+	</header>
+	<h3>
+		<span class="material-symbols-outlined">view_list</span>
+		javascript days00
+	</h3>
+	<div>
+  		<xmp class="code">
+    [엄격모드 "use strict";]
+	let x = "\010";     ->     8진수 사용 불가
+	const obj = {get x() {return 0;}};     ->     js 객체에서 get 사용 불가
+	delete x;     ->     삭제 불가
+  		</xmp>
+	</div>
+	
+	<script>
+		"use strict";
+		// [엄격모드]
+		// ECMA Script5 새로 추가
+		// 변수를 선언하지 않고는 사용할 수 없다.
+
+		name = "홍길동";
+		Name = "신종혁";
+		document.write(name); // 홍길동
+	</script>
+
+	<script>
+		function test() {
+			"use strict";
+			// 함수 안에서만도 사용 가능
+		}
+	</script>
+</body>
+</html>
