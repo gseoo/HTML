@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+<script src="/webPro/resources/cdn-main/example.js"></script>
+<style>
+	span.material-symbols-outlined{
+		vertical-align: text-bottom;
+ 	}
+</style>
+</head>
+<body>
+	<header>
+  		<h1 class="main">
+    		<a href="#">GyeongSeo Home</a>
+  		</h1>
+  		<ul>
+  			<li><a href="#">로그인</a></li>
+  			<li><a href="#">회원가입</a></li>
+  		</ul>
+	</header>
+	<h3>
+		<span class="material-symbols-outlined">view_list</span>
+		javascript days00
+	</h3>
+	<div>
+  		<xmp class="code">
+    		
+  		</xmp>
+  		
+  		<table>
+			<tr>
+				<td>
+					<select multiple name="leftCmb" id="leftCmb">
+						<option selected>김성준</option>
+						<option>주강민</option>
+						<option selected>박정호</option>
+						<option>신종혁</option>
+						<option selected>이준희</option>
+					</select>
+				</td>
+				<td>
+					<button>▶</button><br>
+					<button>▶▶</button><br>
+					<button>◀</button><br>
+					<button>◀◀</button><br>
+				</td>
+				<td>
+					<select multiple name="rightCmb" id="rightCmb"></select>
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+	<script>
+		// ▶
+		$("button").first().click(function(event) {
+			$("#leftCmb option:selected").each(function(i, element) {
+				$("#rightCmb").append($(element).clone());
+			});
+		});
+
+		// ▶▶
+		$("button").eq(1).click(function(event) {
+			$("#leftCmb option:selected").each(function(i, element) {
+				$("#rightCmb").append($(element));
+			});
+		});
+
+		// ◀
+		$("button").eq(2).click(function(event) {
+
+		});
+
+		// ◀◀
+		$("button").last().click(function(event) {
+
+		});
+
+	</script>
+</body>
+</html>
