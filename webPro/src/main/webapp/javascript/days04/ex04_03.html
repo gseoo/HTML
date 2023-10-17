@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+<script src="/webPro/resources/cdn-main/example.js"></script>
+<style>
+	span.material-symbols-outlined{
+		vertical-align: text-bottom;
+ 	}
+</style>
+</head>
+<body>
+	<header>
+  		<h1 class="main">
+    		<a href="#">GyeongSeo Home</a>
+  		</h1>
+  		<ul>
+  			<li><a href="#">로그인</a></li>
+  			<li><a href="#">회원가입</a></li>
+  		</ul>
+	</header>
+	<h3>
+		<span class="material-symbols-outlined">view_list</span>
+		javascript days00
+	</h3>
+	<div>
+  		<xmp class="code">
+    		
+  		</xmp>
+	</div>
+	
+	<script>
+		var text = "hello world";
+		console.log(text.charAt(0)); // h
+		console.log(text[0]); // h
+	</script>
+
+	<script>
+		// padStart(), padEnd()
+		//var no = "5";
+		//alert(no.padStart(4, "0")); // "0005"
+
+		var no = 5;
+		//alert(String(no).padStart(4, "0")); // "0005"
+		//alert(no.toString().padStart(4, "0")); // "0005"
+	</script>
+
+	<script>
+		// var txt1 = "hello";
+		// var txt2 = "world";
+		// var txt = txt1 + txt2;
+		// txt = txt1.concat(txt2);
+	</script>
+
+	<script>
+		var txt = "Admin";
+		txt.toUpperCase(); // "ADMIN"
+		txt.toLowerCase(); // "admin"
+	</script>
+
+	<script>
+		// var txt = "txt = txt1.concat(txt2);";
+		// var searchword = "txt";
+		// var index = txt.indexOf(searchword); // 0
+		// index = txt.indexOf(searchword, index + searchword.length); // 6
+		// var newTxt = txt.replace(searchword, "xxx"); // xxx = txt1.concat(txt2);
+		// var newTxt = txt.replaceAll(searchword, "yyy"); // yyy = yyy1.concat(yyy2);
+		
+		// searchword = "Txt";
+		// var newTxt = txt.replace(searchword, "xxx"); // txt = txt1.concat(txt2);
+
+		// searchword = /txt/i;
+		// var newTxt = txt.replace(searchword, "xxx"); // xxx = txt1.concat(txt2);
+		// var newTxt = txt.replaceAll(searchword, "xxx");
+
+		var txt = "txt = txt1.concat(txt2);";
+		var searchword = /txt/ig;
+		//alert(txt.replaceAll(searchword, 'xxx')); // xxx = xxx1.concat(xxx2);
+
+		/*
+		var txt = "   hello   ";
+		alert(`[${txt.trim()}]`); // [hello]
+		alert(`[${txt.trimStrat()}]`); // [hello   ]
+  		alert(`[${txt.trimEnd()}]`); // [   hello]
+		*/
+	</script>
+
+	<script>
+		let rrn = "821023-1700001";
+
+		// slice() , substring(), substr()
+		// 1) slice(from, [to])
+		let year = rrn.slice(0, 2);
+		let month = rrn.slice(2, 4);
+		let day = rrn.slice(4, 6);
+		// 82.10.23
+		// alert( `${year}.${month}.${day}` );
+		
+		// 2) substring()
+		year = rrn.substring(0, 2)
+		month = rrn.substring(2, 4);
+		day = rrn.substring(4, 6);
+		// alert( `${year}.${month}.${day}` );
+   
+		//          1700001
+		alert( rrn.slice(-7) );
+		
+		// 2) substring(from, to)
+		year = rrn.substring(0, 2)
+		month = rrn.substring(2, 4);
+		day = rrn.substring(4, 6);
+		// > 82.10.23
+		// alert( `> ${year}.${month}.${day}` );
+		
+		// 3) substr(from, length)
+		year = rrn.substr(0, 2)
+		month = rrn.substr(2, 2);
+		day = rrn.substr(4, 2);
+		alert( `>> ${year}.${month}.${day}` );
+	</script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+<script src="/webPro/resources/cdn-main/example.js"></script>
+<style>
+	span.material-symbols-outlined{
+		vertical-align: text-bottom;
+ 	}
+</style>
+</head>
+<body>
+	<header>
+  		<h1 class="main">
+    		<a href="#">GyeongSeo Home</a>
+  		</h1>
+  		<ul>
+  			<li><a href="#">로그인</a></li>
+  			<li><a href="#">회원가입</a></li>
+  		</ul>
+	</header>
+	<h3>
+		<span class="material-symbols-outlined">view_list</span>
+		javascript days00
+	</h3>
+	<div>
+  		<xmp class="code">
+    		
+  		</xmp>
+	</div>
+	
+	<script>
+		/*
+		console.log(window.isNaN("123")); // false
+		console.log(window.isNaN("12a3")); // true
+	
+		console.log(isNaN("123")); // false
+		console.log(isNaN("12a3")); // true
+		*/
+	</script>
+	
+	<script>
+		// false
+		// 더 엄격한 isNaN()
+		Number.isNaN("NaN");
+		Number.isNaN(undefined);
+		Number.isNaN({});
+		Number.isNaN("blabla");
+		Number.isNaN(true);
+		Number.isNaN(null);
+		Number.isNaN("37");
+		Number.isNaN("37.37");
+		Number.isNaN("");
+		Number.isNaN(" ");
+		
+		
+		isNaN("NaN"); // true
+		isNaN(undefined); // true
+		isNaN({}); // true
+		isNaN("blabla"); // true
+		isNaN(true); // false, this is coerced to 1 true/0 false
+		isNaN(null); // false, this is coerced to 0 null
+		isNaN("37"); // false, this is coerced to 37
+		isNaN("37.37"); // false, this is coerced to 37.37
+		isNaN(""); // false, this is coerced to 0 변환
+		isNaN(" "); // false, this is coerced to 0
+	</script>
+</body>
+</html>

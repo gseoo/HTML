@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+<script src="/webPro/resources/cdn-main/example.js"></script>
+<style>
+	span.material-symbols-outlined{
+		vertical-align: text-bottom;
+ 	}
+</style>
+</head>
+<body>
+	<header>
+  		<h1 class="main">
+    		<a href="#">GyeongSeo Home</a>
+  		</h1>
+  		<ul>
+  			<li><a href="#">로그인</a></li>
+  			<li><a href="#">회원가입</a></li>
+  		</ul>
+	</header>
+	<h3>
+		<span class="material-symbols-outlined">view_list</span>
+		javascript days00
+	</h3>
+	<div>
+  		<xmp class="code">
+    [js 숫자(Number)]
+  		</xmp>
+	</div>
+	
+	<script>
+		let x = 3;
+		let y = 3.14;
+		let z = 123e5;
+
+		// js 숫자는 항상 64비트 부동 소수점 형태로 처리
+		// js는 최대 15자리까지만 정확함
+		// 소수점은 최대 17자리까지만 정확
+		x = 999999999999999; //15자리
+		y = 9999999999999999; //16자리
+		console.log(x); // 999999999999999
+		console.log(y); // 10000000000000000
+
+		// 오차가 있을 수 있음
+		z = 0.2 + 0.1;
+		//alert(z); // 0.30000000000000004
+
+		/*
+		10 + 20 = 30
+		"10" + "20" = "1020"
+		10 + "20" = "1020"
+		*/
+
+		x = "100";
+		y = "10"
+		z = x / y; // 10
+		// js 모든 숫자 연산은 문자열 숫자로 변환하려고 함 - 더하기 제외
+
+		//100/"test" => NaN
+		//isNaN(100/"test") => true
+
+		//NaN + "5" => "NaN5"
+
+		//alert(typeof 100/"test");
+		//alert(typeof NaN); // number
+
+	</script>
+	<script>
+		x = 2 / 0;
+		// alert(x);  // Infinity 무한대
+		// alert( typeof Infinity ); // number
+		y = -2 / 0;
+		//alert(x); // -Infinity
+	</script>
+	<script>
+		x = 0xFF; // 16진수값
+		y = 012; // 8진수값
+	</script>
+
+	<script>
+		x = 10;
+		console.log(x.toString()); // 10진수 형식의 string
+		console.log(x.toString(2)); // 2진수 형식의 string
+		console.log(x.toString(8)); // 8진수 형식의 string
+		console.log(x.toString(16)); // 16진수 형식의 string
+	</script>
+
+	<script>
+		// var a = "hong";
+		// var b = new String("hong");
+		// == true String
+		// === false object 타입
+	</script>
+</body>
+</html>

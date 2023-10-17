@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+<script src="/webPro/resources/cdn-main/example.js"></script>
+<style>
+	span.material-symbols-outlined{
+		vertical-align: text-bottom;
+ 	}
+</style>
+</head>
+<body>
+	<header>
+  		<h1 class="main">
+    		<a href="#">GyeongSeo Home</a>
+  		</h1>
+  		<ul>
+  			<li><a href="#">로그인</a></li>
+  			<li><a href="#">회원가입</a></li>
+  		</ul>
+	</header>
+	<h3>
+		<span class="material-symbols-outlined">view_list</span>
+		javascript days00
+	</h3>
+	<div>
+  		<xmp class="code">
+    		
+  		</xmp>
+	</div>
+	
+	<script>
+		const m = [1, 30, 4, 21, 10000];
+  		console.log( m ); // (5) [1, 30, 4, 21, 10000]
+
+		// 문자열 형태로 오름차순 정렬
+		//m.sort();
+		//console.log(m); // (5) [1, 10000, 21, 30, 4]
+
+		// 숫자 오름차순/내림차순 정렬
+		m.sort(function(a,b) {
+			//return a - b; // 오름차순 (5) [1, 4, 21, 30, 10000]
+			return b - a; // 내림차순 (5) [10000, 30, 21, 4, 1]
+		});
+		console.log( m );
+	</script>
+
+	<script>
+		// 배열 중간에 요소 추가 : splice() 
+		// splice(위치, 제거할 갯수, 추가할 요소)
+		 const n = ['d','a','f','c','e','b'];
+
+		 n.splice(2, 2); // 제거
+		 //console.log(n); // (4) ['d', 'a', 'e', 'b']
+
+		 n.splice(2, 0, 'x', 'y');
+		 console.log(n); // (6) ['d', 'a', 'x', 'y', 'e', 'b']
+
+		 const arr = n.slice(2, 4);
+		 console.log(arr); // (2) ['x', 'y']
+		 console.log(n); // (6) ['d', 'a', 'x', 'y', 'e', 'b']
+		 // slice() 하더라도 소스 배열은 그대로 유지됨
+
+		 // 배열명.toString() => "[3, 5]"
+
+	</script>
+</body>
+</html>

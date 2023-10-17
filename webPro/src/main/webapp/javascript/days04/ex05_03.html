@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+<script src="/webPro/resources/cdn-main/example.js"></script>
+<style>
+	span.material-symbols-outlined{
+		vertical-align: text-bottom;
+ 	}
+</style>
+</head>
+<body>
+	<header>
+  		<h1 class="main">
+    		<a href="#">GyeongSeo Home</a>
+  		</h1>
+  		<ul>
+  			<li><a href="#">로그인</a></li>
+  			<li><a href="#">회원가입</a></li>
+  		</ul>
+	</header>
+	<h3>
+		<span class="material-symbols-outlined">view_list</span>
+		javascript days00
+	</h3>
+	<div>
+  		<xmp class="code">
+	[js 숫자 형변환 메소드]
+	Number()
+	parseInt()
+	parseFloat()
+  		</xmp>
+	</div>
+	
+	<script>
+		/*
+		console.log(Number("10")); // 10
+		console.log(parseInt("10")); // 10
+		console.log(parseFloat("10")); // 10
+		*/
+
+		/*
+		console.log(Number("   10")); // 10
+		console.log(parseInt("   10")); // 10
+		console.log(parseFloat("   10")); // 10
+		*/
+
+		/*
+		console.log(Number("10   ")); // 10
+		console.log(parseInt("10   ")); // 10
+		console.log(parseFloat("10   ")); // 10
+		*/
+
+		/*
+		console.log(Number("10.33")); // 10.33
+		console.log(parseInt("10.33")); // 10
+		console.log(parseFloat("10.33")); // 10.33
+		*/
+
+		/*
+		console.log(Number("10 20 30")); // NaN
+		console.log(parseInt("10 20 30")); // 10
+		console.log(parseFloat("10 20 30")); // 10
+		*/
+
+		/*
+		console.log(Number("10,20,30")); // NaN
+		console.log(parseInt("10,20,30")); // 10
+		console.log(parseFloat("10,20,30")); // 10
+		*/
+
+		/*
+		console.log( Number(true) );     // 1
+   		console.log( parseInt(true) );   // NaN
+   		console.log( parseFloat(true) ); // NaN
+		*/
+
+		// Number()  날짜->숫자 변환
+		console.log( Number(new Date()) ); // 1697524486664 (ms)
+	</script>
+</body>
+</html>
