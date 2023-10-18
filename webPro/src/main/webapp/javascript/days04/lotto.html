@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+<script src="/webPro/resources/cdn-main/example.js"></script>
+<style>
+	span.material-symbols-outlined{
+		vertical-align: text-bottom;
+ 	}
+</style>
+</head>
+<body>
+   <header>
+      <h1 class="main">
+         <a href="#" style="position: absolute; top: 30px;">Gyeongseo Home</a>
+      </h1>
+      <ul>
+         <li><a href="#">로그인</a></li>
+         <li><a href="#">회원가입</a></li>
+      </ul>
+   </header>
+   <h3>
+      <span class="material-symbols-outlined">view_list</span>
+      javascript days00
+   </h3>
+   <div>
+      <xmp class="code">
+      </xmp>
+
+      <button>로또 번호 발생기</button>
+      <p id="demo"></p>
+   </div>
+
+   <script>
+      $("button").click(function(event) {
+         let lotto = [];
+         let n = 0;
+         while(n < 6) {
+            let lottoNum = parseInt(Math.random()*45 + 1);
+            if(lotto.indexOf(lottoNum) < 0)
+               lotto[n++] = lottoNum;
+         }
+
+         lotto.sort((a,b)=> {
+            return a - b;
+         });
+
+         let content = "<ul>";
+         for(var i=0; i<lotto.length; i++) {
+            content += `<li>${lotto[i]}</li>`;
+         }
+         content += "</ul>";
+         $("p#demo").html(content);
+      });
+   </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+<script src="/webPro/resources/cdn-main/example.js"></script>
+<style>
+	span.material-symbols-outlined{
+		vertical-align: text-bottom;
+ 	}
+</style>
+</head>
+<body>
+	<header>
+  		<h1 class="main">
+    		<a href="#">GyeongSeo Home</a>
+  		</h1>
+  		<ul>
+  			<li><a href="#">로그인</a></li>
+  			<li><a href="#">회원가입</a></li>
+  		</ul>
+	</header>
+	<h3>
+		<span class="material-symbols-outlined">view_list</span>
+		javascript days00
+	</h3>
+	<div>
+  		<xmp class="code">
+    		
+  		</xmp>
+	</div>
+	
+	<script>
+		for (var i = 0; i < array.length; i++) {
+			
+		}
+	</script>
+	<script>
+		// for in문 : 객체의 속성을 반복하는 문
+		const person = {firstName:"John"
+						, lastName:"Doe"
+						, age:25};
+		
+		//alert( person.firstName );
+		//alert( person["firstName"] );
+		  
+		for ( var key in person) {
+			document.write(key + ":" + person[key] +"<br>");
+		}
+	</script>
+	<script>
+		// js 배열도 객체이다. 
+		const m = [3,5,2,4,1];
+		for ( var key in m) {
+			document.write(key + ":" + m[key] +"<br>");
+		}
+	</script>
+	<script>
+		// [for of문]
+		// 배열, 객체, Map, 문자열, NodeList등과 
+		// 같은 객체의 값을 반복으로 처리하는 문
+		for (let elt of m) {
+			document.write("> "+ elt +"<br>");
+		}
+		
+		/*
+		for (let f of person) { // 타입 에러
+			document.write(">> "+ f +"<br>");
+		}
+		*/
+		
+		let msg = "hello world";
+		for(let c of msg) {
+			document.write(">> " + c + "<br>");
+		}
+	</script>
+	<script>
+		// break 레이블;
+		OUT:
+		for (var i = 0; i < m.length; i++) {
+			if(i==2) break OUT;;
+			document.write(">> " + c + "<br>");
+		}
+	</script>
+</body>
+</html>

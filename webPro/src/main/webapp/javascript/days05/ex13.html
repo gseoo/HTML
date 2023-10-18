@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+<script src="/webPro/resources/cdn-main/example.js"></script>
+<style>
+	span.material-symbols-outlined{
+		vertical-align: text-bottom;
+ 	}
+</style>
+</head>
+<body>
+	<header>
+  		<h1 class="main">
+    		<a href="#">GyeongSeo Home</a>
+  		</h1>
+  		<ul>
+  			<li><a href="#">로그인</a></li>
+  			<li><a href="#">회원가입</a></li>
+  		</ul>
+	</header>
+	<h3>
+		<span class="material-symbols-outlined">view_list</span>
+		javascript days00
+	</h3>
+	<div>
+  		<xmp class="code">
+    	ES6에 도입된 화살표 연산자(람다식)
+  		</xmp>
+	</div>
+	
+	<script>
+	/*
+		let hello = function() {
+			return "hello world";
+		}
+	*/
+		//alert(hello); // 함수 코드 출력
+		//alert(hello()); // hello world
+		
+		/*
+		let hello = () => {
+			return "hello world";
+		}
+		*/
+		
+		/*
+		// {} : 명령라인이 한 줄일 경우
+		// return문도 생략 가능
+		let hello = () => "hello world";
+		*/
+		
+		/*
+		let hello = function(name, age) {
+			return name + " / " + age;
+		}
+		*/
+		/*
+		let hello = (name, age) => {
+			return name + " / " + age;
+		}
+		*/
+		//let hello = (name, age) => name + " / " + age;
+		
+		
+		/*
+		let hello = function(name) {
+			return "이름 : " + name;
+		}
+		*/
+		/*
+		let hello = (name) => {
+			return "이름 : " + name;
+		}
+		*/
+		//let hello = (name) => "이름 : " + name;
+		
+		
+		// 매개변수가 한 개일 경우에는 () 생략 가능
+		//let hello = name => "이름 : " + name;
+		
+	</script>
+	<script>
+		let hello = () => {
+			alert(this);
+		};
+		hello(); // [object Window]
+	</script>
+</body>
+</html>

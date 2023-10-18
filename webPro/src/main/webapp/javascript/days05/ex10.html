@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+<script src="/webPro/resources/cdn-main/example.js"></script>
+<style>
+	span.material-symbols-outlined{
+		vertical-align: text-bottom;
+ 	}
+</style>
+</head>
+<body>
+	<header>
+  		<h1 class="main">
+    		<a href="#">GyeongSeo Home</a>
+  		</h1>
+  		<ul>
+  			<li><a href="#">로그인</a></li>
+  			<li><a href="#">회원가입</a></li>
+  		</ul>
+	</header>
+	<h3>
+		<span class="material-symbols-outlined">view_list</span>
+		javascript days00
+	</h3>
+	<div>
+  		<xmp class="code">
+	[js Set]
+	- 중복되지 않는 유일한 값들의 집합
+	- 중복 X, 순서 X
+	- new Set()
+	add()
+	delete()
+	has()
+	forEach()
+	size 속성
+	values() 모든 값들을 포함하는 반복자.
+  		</xmp>
+	</div>
+	
+	<script>
+		const s = new Set();
+		s.add("aa");
+		s.add("bb");
+		s.add("cc");
+		s.add("aa");
+		//alert(s.size); // 3
+		// alert(  s.values() ) // [object Set Iterator]
+
+		for (let v of s.values()) {
+			document.write( v + "<br>");
+		}
+
+		s.forEach(function(value, value2, set) {
+			document.write( " > " +  value + "<br>");
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+<script src="/webPro/resources/cdn-main/example.js"></script>
+<style>
+	span.material-symbols-outlined{
+		vertical-align: text-bottom;
+ 	}
+</style>
+</head>
+<body>
+	<header>
+  		<h1 class="main">
+    		<a href="#">GyeongSeo Home</a>
+  		</h1>
+  		<ul>
+  			<li><a href="#">로그인</a></li>
+  			<li><a href="#">회원가입</a></li>
+  		</ul>
+	</header>
+	<h3>
+		<span class="material-symbols-outlined">view_list</span>
+		javascript days00
+	</h3>
+	<div>
+  		<xmp class="code">
+    		
+  		</xmp>
+	</div>
+	
+	<script>
+		// js 날짜/시간 Date 객체
+		var d = new Date();
+		//console.log(d); // Wed Oct 18 2023 10:33:27 GMT+0900 (한국 표준시)
+
+		var d = new Date("2023-10-18"); // Wed Oct 18 2023 09:00:00 GMT+0900 (한국 표준시)
+		console.log(d);
+		console.log(d.toString()); // Wed Oct 18 2023 09:00:00 GMT+0900 (한국 표준시)
+		console.log(d.toDateString()); // Wed Oct 18 2023
+		console.log(d.toLocaleDateString()); // 2023. 10. 18.
+		console.log(d.toLocaleTimeString()); // 오전 9:00:00
+
+		var d = new Date(2023); // ms로 인식
+		console.log(d.toLocaleString()); // 1970. 1. 1. 오전 9:00:02
+
+		// 0(1월) ~ 11(12월)
+		var d = new Date(2023, 10); 
+		console.log(d.toLocaleString()); // 2023. 11. 1. 오전 12:00:00
+
+		var d = new Date(2023, 10-1, 15); 
+		console.log(d.toLocaleString()); // 2023. 10. 15. 오전 12:00:00
+
+		var d = new Date(2023, 10-1, 35); 
+		console.log(d.toLocaleString()); // 2023. 11. 4. 오전 12:00:00
+	</script>
+</body>
+</html>
