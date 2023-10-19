@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+<script src="/webPro/resources/cdn-main/example.js"></script>
+<style>
+	span.material-symbols-outlined{
+		vertical-align: text-bottom;
+ 	}
+</style>
+</head>
+<body>
+	<header>
+  		<h1 class="main">
+    		<a href="#">GyeongSeo Home</a>
+  		</h1>
+  		<ul>
+  			<li><a href="#">로그인</a></li>
+  			<li><a href="#">회원가입</a></li>
+  		</ul>
+	</header>
+	<h3>
+		<span class="material-symbols-outlined">view_list</span>
+		javascript days00
+	</h3>
+	<div>
+  		<xmp class="code">
+    	TypeWriter
+  		</xmp>
+  		
+  		<button>TypeWriter</button>
+  		<p id="demo"></p>
+  		
+	</div>
+	
+	<script>
+		let content;
+		let contentLenght;
+		let timer;
+		$("button").on("click", function() {
+			// document.body == <body> 요소
+			// document.documentElement == <html> 요소 == $("html")
+			content = document.documentElement.innerHTML;
+			//alert(content);
+			
+			contentLenght = content.length;
+			
+			typeWriter();
+			timer = setInterval(typeWriter, 10);
+		});
+		
+		let i = 0;
+		function typeWriter() {
+			if(i < contentLenght) {
+				//let oneChar = content.charAt(i++);
+				let oneChar = content[i++];
+				$("#demo").html(function(index, oldhtml) {
+					return oldhtml + (oneChar == '\n' ? "<br>" : oneChar);
+				});
+				window.scrollTo(0, document.body.scrollHeight);
+			} else {
+				clearInterval(timer);
+				alert("출력 완료!");
+			}
+		}
+	</script>
+</body>
+</html>

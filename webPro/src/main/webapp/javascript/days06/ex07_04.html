@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+<script src="/webPro/resources/cdn-main/example.js"></script>
+<style>
+	span.material-symbols-outlined{
+		vertical-align: text-bottom;
+ 	}
+</style>
+</head>
+<body>
+	<header>
+  		<h1 class="main">
+    		<a href="#">GyeongSeo Home</a>
+  		</h1>
+  		<ul>
+  			<li><a href="#">로그인</a></li>
+  			<li><a href="#">회원가입</a></li>
+  		</ul>
+	</header>
+	<h3>
+		<span class="material-symbols-outlined">view_list</span>
+		javascript days00
+	</h3>
+	<div>
+  		<xmp class="code">
+    		
+  		</xmp>
+  		<button>0</button>
+  		<button>0</button>
+  		<button>0</button>
+  		<button>0</button>
+  		<button>0</button>
+  		<button>0</button>
+  		<button>0</button>
+  		<button>0</button>
+  		<button>0</button>
+  		<button>0</button>
+  		<button>0</button>
+  		<button>0</button>
+  		<button>0</button>
+  		<button>0</button>
+  		<button>0</button>
+  		<button>0</button>
+  		<button>0</button>
+  		<button>0</button>
+  		<button>0</button>
+  		<button>0</button>
+	</div>
+	
+	<script>
+		/*
+		let btns = document.querySelectorAll("button");
+		for(var i=0; i<btns.length; i++) {
+			btns[i].onclick = function() {
+				let counter = event.srcElement.innerHTML;
+				event.srcElement.innerHTML = ++counter;
+			}
+		}
+		*/
+
+		/*
+		$("button").on("click", function() {
+			//let counter = $(this).html();
+			//$(this).html(++counter);
+
+			$(this).html(function(index, oldhtml) {
+				return ++oldhtml;
+			});
+		});
+		*/
+	</script>
+
+	<script>
+		// 버튼 20개
+		/*
+		let counter1 = 1;
+		let counter 2 = 0;
+		...
+		let counter 20 = 0;
+		*/
+
+		/*
+		// js 배열
+		let counts =[];
+		for(var i=0; i<20; i++) counts.push(0); // 20개짜리 배열을 전부 0으로 초기화
+
+		$("button").click(function() {
+			let idx = $(this).index(); // 1 2 3 4
+			$(this).html(++counts[idx - 1]);
+		});
+		*/
+	</script>
+
+	<script>
+		// js 함수 클로저
+		// 클로저? 상위 함수가 닫힌 후에도 상위 범위에 접근할 수 있는 함수
+		// 기술
+		// 조합
+		/*
+		let btns = document.querySelectorAll("button");
+		for(var i=0; i<btns.length; i++) {
+			btns[i].onclick = (
+				function() {
+					let counter = 0;
+					return function() {
+						event.srcElement.innerHTML = ++counter;
+					};
+				}
+			)();
+		}
+		*/
+
+		// jquery
+		$("button").on("click", (
+				function() {
+					let counter = 0;
+					return function() {
+						event.srcElement.innerHTML = ++counter;
+					};
+				}
+			)()
+		);
+	</script>
+</body>
+</html>

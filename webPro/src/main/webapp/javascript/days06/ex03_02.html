@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+<script src="/webPro/resources/cdn-main/example.js"></script>
+<style>
+	span.material-symbols-outlined{
+		vertical-align: text-bottom;
+ 	}
+</style>
+</head>
+<body>
+	<header>
+  		<h1 class="main">
+    		<a href="#">GyeongSeo Home</a>
+  		</h1>
+  		<ul>
+  			<li><a href="#">로그인</a></li>
+  			<li><a href="#">회원가입</a></li>
+  		</ul>
+	</header>
+	<h3>
+		<span class="material-symbols-outlined">view_list</span>
+		javascript days00
+	</h3>
+	<div>
+  		<xmp class="code">
+    	[자체 호출 함수]
+    	1. 함수 표현식
+    	2. 자기자신 함수 호출
+  		</xmp>
+	</div>
+	
+	<script>
+		/*
+		//alert(hi()); // 여기서 불가
+		let hi = function() {
+			return "hello world";
+		};
+		
+		alert(hi());
+		*/
+	</script>
+	<script>
+		let hi = (function() {
+			return "hello world";
+			//alert("자체호출함수");
+		})();
+		
+		//alert(hi); // hello world
+	</script>
+	<script>
+		function test() {
+			return "test";
+		}
+		//alert(typeof test); // function
+		
+		let f = test.toString();
+		//alert(typeof f); // string
+		//alert(f); // 함수 코드 출력
+	</script>
+</body>
+</html>

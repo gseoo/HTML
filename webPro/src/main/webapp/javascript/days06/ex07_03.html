@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+<script src="/webPro/resources/cdn-main/example.js"></script>
+<style>
+	span.material-symbols-outlined{
+		vertical-align: text-bottom;
+ 	}
+</style>
+</head>
+<body>
+	<header>
+  		<h1 class="main">
+    		<a href="#">GyeongSeo Home</a>
+  		</h1>
+  		<ul>
+  			<li><a href="#">로그인</a></li>
+  			<li><a href="#">회원가입</a></li>
+  		</ul>
+	</header>
+	<h3>
+		<span class="material-symbols-outlined">view_list</span>
+		javascript days00
+	</h3>
+	<div>
+  		<xmp class="code">
+    	[ js 중첩 함수 이해 ]
+		1. 모든 함수에서 전역변수에 접근 가능
+		2. js에서 모든 함수가 
+  		</xmp>
+  		<button>count!!</button>
+  		<p id="demo"></p>
+	</div>
+	
+	<script>
+		/*
+		function add() {
+			let counter = 0;
+
+			function plus() {
+				counter += 1;
+			}
+
+			plus();
+
+			return counter;
+		}
+		
+		$("button").on("click", function() {
+			$("#demo").html(add());
+		});
+
+		// 버튼 클릭 -> add() 호출 -> plus() 호출 -> 상위 counter 1 증가 -> return counter
+		*/
+
+		/*
+		[문제 제시]
+		add() 호출 x -> plus() 중첩함수 호출
+		counter 
+		지역변수 -> 전역변수
+		폐쇄   한번 초기화
+		*/
+	</script>
+	<script>
+		// add() x 폐쇄
+		// plus() 중첩함수 호출
+		// [자체 호출 함수 이용]
+		// 버튼 클릭 1/2/3
+
+		var plus = (
+			function() {
+				let counter = 0;
+				return function() {
+					counter += 1;
+					return counter;
+				};
+			}
+		)();
+
+		$("button").on("click", function() {
+			$("#demo").html(plus());
+		});
+	</script>
+</body>
+</html>

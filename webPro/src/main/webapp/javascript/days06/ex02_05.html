@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+<script src="/webPro/resources/cdn-main/example.js"></script>
+<style>
+	span.material-symbols-outlined{
+		vertical-align: text-bottom;
+ 	}
+</style>
+</head>
+<body>
+	<header>
+  		<h1 class="main">
+    		<a href="#">GyeongSeo Home</a>
+  		</h1>
+  		<ul>
+  			<li><a href="#">로그인</a></li>
+  			<li><a href="#">회원가입</a></li>
+  		</ul>
+	</header>
+	<h3>
+		<span class="material-symbols-outlined">view_list</span>
+		javascript days00
+	</h3>
+	<div>
+  		<xmp class="code">
+    	[js 객체 생성자]
+    	- java 생성자 비교
+    	- 객체 생성할 때 사용하는 함수
+    	  new String()
+    	  new Number()
+    	  new Boolean()
+    	  new Date()
+    	- 대문자로 시작 (권장)
+    	- this == 생성되는 새로운 객체
+  		</xmp>
+	</div>
+	
+	<script>
+		function Person() {
+			this.fname = fname;
+			this.lname = lname;
+			this.age = age;
+			// this.eyeColor = "blue"; 
+			
+			// 메서드
+			this.fullname = function (){
+				return this.fname +"/"+this.lname;
+			}
+		}
+		
+		const p1 = new Person("길동", "홍", 20);
+		const p2 = new Person("길동", "홍", 20);
+		
+		// 1. 기존 객체에 새로운 속성 추가
+		p1.language  = "kr"; 
+  		//alert( p1.fullname() );
+  		
+  		// 2. 기존 객체에 새로운 메소드 추가
+  		p1.lang = function() {
+  			return this.fname +"//"+this.lname;
+  		}
+  		
+  		// 3. 객체생성자 새로운 속성 추가 X
+  		//Person.eyeColor = "blue"; // 불가능 - undefined
+  		
+  		// 3-2. prototype (프로토타입)
+  		Person.prototype.eyeColor = "blue";
+  		
+  		// 4. 객체생성자 새로운 메소드 추가
+  		Person.prototype.print = function() {
+  			// 출력 코딩
+  		}
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+<script src="/webPro/resources/cdn-main/example.js"></script>
+<style>
+	span.material-symbols-outlined{
+		vertical-align: text-bottom;
+ 	}
+</style>
+</head>
+<body>
+	<header>
+  		<h1 class="main">
+    		<a href="#">GyeongSeo Home</a>
+  		</h1>
+  		<ul>
+  			<li><a href="#">로그인</a></li>
+  			<li><a href="#">회원가입</a></li>
+  		</ul>
+	</header>
+	<h3>
+		<span class="material-symbols-outlined">view_list</span>
+		javascript days00
+	</h3>
+	<div>
+  		<xmp class="code">
+    	[js 함수(function)]
+    	1. function 함수명([매개변수...]) {
+    	     [return 리턴값;]
+    	   }
+    	
+    	2. 익명함수를 변수로 저장
+    	let 변수명 = function(a,b) {
+    				return a + b;
+    				}
+    	   변수명(1, 2);
+  		</xmp>
+	</div>
+	
+	<script>
+		// 3. Function 함수 생성자
+	   const sum = new Function("a","b", "return a+b");
+	   // const sum = function (a,b){ return a+b; }
+	   //alert( sum(1,2) );
+	</script>
+	
+	<script>
+		// js 호이스팅
+		// (주의) 함수 표현식을 사용하여 정의된 함수는 호이스팅 안 됨
+		test();
+		
+		function test() {
+			
+		}
+	</script>
+</body>
+</html>

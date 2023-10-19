@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+<script src="/webPro/resources/cdn-main/example.js"></script>
+<style>
+	span.material-symbols-outlined{
+		vertical-align: text-bottom;
+ 	}
+</style>
+</head>
+<body>
+	<header>
+  		<h1 class="main">
+    		<a href="#">GyeongSeo Home</a>
+  		</h1>
+  		<ul>
+  			<li><a href="#">로그인</a></li>
+  			<li><a href="#">회원가입</a></li>
+  		</ul>
+	</header>
+	<h3>
+		<span class="material-symbols-outlined">view_list</span>
+		javascript days00
+	</h3>
+	<div>
+  		<xmp class="code">
+    	[js 함수 클로저]
+    	1. js 변수
+    		1) 지역변수
+    			ㄴ function scope
+    			ㄴ block scope
+    		2) 전역변수 : 	global scope
+    			ㄴ 다른 페이지로 이동, 창 닫을 때까지 유지되는 변수
+    			
+    	2. js 함수 클로저 (=함수 내에서 폐쇄)
+    		- 전역변수
+    		- 비공개적으로 사용됨
+  		</xmp>
+	</div>
+	
+	<script>
+		var name; // 전역변수 window.name
+		
+		function test() {
+			name = "홍길동";
+			//var age = 20; // 지역변수
+			
+			// let, var, const 키워드를 사용하지 않고 변수를 선언하면 
+			// 지역범위에 선언해도 전역변수가 됨
+			age = 20;
+			alert("test()..");
+		}
+		
+		function test2() {
+			alert(age + " / " + name);
+		}
+		
+		test();
+		test2();
+	</script>
+</body>
+</html>
