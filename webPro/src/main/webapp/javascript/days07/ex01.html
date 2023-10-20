@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+<script src="/webPro/resources/cdn-main/example.js"></script>
+<style>
+	span.material-symbols-outlined{
+		vertical-align: text-bottom;
+ 	}
+</style>
+</head>
+<body>
+	<header>
+  		<h1 class="main">
+    		<a href="#">GyeongSeo Home</a>
+  		</h1>
+  		<ul>
+  			<li><a href="#">로그인</a></li>
+  			<li><a href="#">회원가입</a></li>
+  		</ul>
+	</header>
+	<h3>
+		<span class="material-symbols-outlined">view_list</span>
+		javascript days00
+	</h3>
+	<div>
+  		<xmp class="code">
+	[ js class - ES6 ]
+	- 상속 가능
+	- static 사용 가능
+  		</xmp>
+	</div>
+	
+	<script>
+		class Car {
+			constructor(brand) {
+				this.carname = brand;
+			}
+
+			present() {
+				return `> car name : ${this.carname}`;
+			}
+		}
+
+		// js 상속
+		class Model extends Car {
+			constructor(brand, model) {
+				super(brand);
+				this.model = model;
+			}
+
+			show() {
+				return this.present() + "/" + this.model;
+			}
+
+			static hello() {
+				return "hello world";
+			}
+		}
+
+		let myCar = new Model("Ford", "Mustang",);
+		console.log(myCar.show()); // > car name : Ford/Mustang
+		console.log(Model.hello()); // hello world
+	</script>
+</body>
+</html>

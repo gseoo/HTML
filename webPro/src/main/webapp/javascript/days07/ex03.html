@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+<script src="/webPro/resources/cdn-main/example.js"></script>
+<style>
+	span.material-symbols-outlined{
+		vertical-align: text-bottom;
+ 	}
+</style>
+</head>
+<body>
+	<header>
+  		<h1 class="main">
+    		<a href="#">GyeongSeo Home</a>
+  		</h1>
+  		<ul>
+  			<li><a href="#">로그인</a></li>
+  			<li><a href="#">회원가입</a></li>
+  		</ul>
+	</header>
+	<h3>
+		<span class="material-symbols-outlined">view_list</span>
+		javascript days00
+	</h3>
+	<div>
+  		<xmp class="code">
+    	[js html DOM]
+    	1. 웹페이지 요청 -> 응답 -> 해당 웹페이지의 문서 객체 생성
+    	
+    	2. 응답 문서 객체(DOM) - 속성, 메소드
+    	
+    	3. html 문서의 모든 것은 노드(Node)이다. (요소, 속성, 주석처리, 선언문, 텍스트)
+    	   document 노드 : 전체 문서
+    	   html 노드 : root node, element node
+    	   <>텍스트</> : text node
+    	   <a href="aaa"> : attribute node
+    	   // : comment node
+    	   
+    	4. 모든 노드들은 관계를 맺고 있다.
+    	   - 부모 자식 관계 
+    	     parentNode  childNode
+    	     
+    	   - 형제 관계
+    	     nextElementSibling : 다음 형제 요소 노드
+    	     nextSibling : 다음 형제 노드(요소, 속성, 주석, 텍스트)
+    	     previousElementSibling
+    	     previousSibling
+    	     firstChild
+    	     lastChild
+    	     
+    	5. 노드들 간에 탐색할 때 자주 사용되는 속성
+    	   1) parentNode
+    	   2) firstChild, lastChild
+    	   3) nextSibling, previousSibling
+    	   4) childNodes : 모든 자식 노드 목록  return nodeList
+    	   
+    	6. 각 노드 속성 (Element, Comment, Attribute, Text Node)
+    	   1) nodeValue
+    	      요소노드 - null
+    	      속성노드 - 속성값
+    	      텍스트노드 - 텍스트
+    	   2) nodeName
+    	      요소노드 - 태그명
+    	      속성노드 - 속성명
+    	      텍스트노드 - #text
+    	      주석노드 - #comment
+    	      
+    	   3) nodeType
+    	      1 - 요소노드
+    	      2 - 속성노드
+    	      3 - 텍스트노드
+    	      4 - 주석노드
+    	      5 - html 노드
+    	      6 - html 선언문 DOCTYPE
+    	      
+    	   7. DOM 메소드
+    	      1) html 요소 찾는 메소드
+				 document.getElementById(id);
+				 document.getElementsByClassName(name);
+				 document.getElementsByName(name);
+				 document.getElementsByTagName(tagName);
+				 document.querySelector(selector);
+				 document.querySelectorAll(selector);
+				
+			  2) html 요소 변경 메소드
+			     element.getAttribute(name);
+			     element.setAttribute(name, value);
+			     element.속성명
+			     elemet. 속성명 = "속성값"
+			     element.style.속성명 = "속성값";
+			     element.innerHTML;
+			     element.innerText;
+			  
+			  3) 요소 추가, 생성, 삭제
+			     document.createElement();
+			     document.appendChild();
+			     document.removeChild();
+			     document.replaceChild();
+			     document.write();
+			  
+			  4) html 객체
+			     document.forms 컬렉션
+			     document.scripts 컬렉션
+			     document.links 컬렉션
+			     document.images 컬렉션
+			     
+			     document.body == <body></body>
+			     document.documentElement == <html></html>
+			     document.title == <title></title>
+			     document.doctype == <!DOCTYPE>
+			     
+			     document.cookie == 쿠키
+			     document.head == <head></head>
+			     등등
+			  
+			  
+  		</xmp>
+	</div>
+	
+	<script>
+		
+	</script>
+</body>
+</html>

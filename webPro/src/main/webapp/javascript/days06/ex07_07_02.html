@@ -13,6 +13,23 @@
 		vertical-align: text-bottom;
  	}
 </style>
+<style>
+	.myDiv {
+		background-color: #f1f1f1;
+		text-align: center;
+		border: 1px solid #d3d3d3;
+		position: absolute;
+		z-index: 9;
+	}
+
+	.myDivHeader {
+		padding: 10px;
+		cursor: move;
+		z-index: 10;
+		background-color: #2396f3;
+		color: #fff;
+	}
+</style>
 </head>
 <body>
 	<header>
@@ -30,11 +47,72 @@
 	</h3>
 	<div>
   		<xmp class="code">
-    		
+			요소  drardrop() 구현.
   		</xmp>
+  		
+  		<div id="myDiv1" class="myDiv">
+  			<div id="myDiv1Header" class="myDivHeader">Click Here</div>
+  			<p>Lorem.</p>
+  			<p>Fugiat.</p>
+  			<p>Fugiat!</p>
+  		</div>
+
+		  <div id="myDiv2" class="myDiv">
+			<div id="myDiv2Header" class="myDivHeader">Click Here</div>
+			<p>Lorem.</p>
+			<p>Fugiat.</p>
+			<p>Fugiat!</p>
+		</div>
+  		
 	</div>
 	
 	<script>
+		function draggable(elemt) { // 상위 함수
+			
+			// 드래그할 요소의 현재 위치값 저장 변수
+			// 지역 변수, 전역변수(폐쇄적으로)
+			let elemtX = 0, elemtY = 0;
+			// 움직인 거리 저장할 변수
+			let moveX = 0, moveY = 0;
+
+			if(document.getElementById(elemt.id + "Header")) {
+				document.getElementById(elemt.id + "Header").onmousedown = dragMouseDown;
+			}
+
+			// mousedown
+			function dragMouseDown(e) { // 중첩 함수
+				e = window.event || e;
+				elemtX = e.clientX;
+				elemtY = e.clientY;
+
+				document.onmousemove = elementDrag;
+				document.onmouseup = closeDragElement;
+			}
+
+			// mousemove
+			function elementDrag() { // 중첩 함수
+				e = window.event || e;
+				moveX = elemtX - e.clientX;
+				moveY = elemtY - e.clientY;
+
+				elemt.style.left = (elemt.offsetLeft - moveX) + "px"; // 단위 필수
+				elemt.style.top = (elemt.offsetTop - moveY) + "px";
+
+				elemtX = e.clientX;
+				elemtY = e.clientY;
+			}
+
+			// mouseup
+			function closeDragElement() { // 중첩 함수
+				// mousemove 이벤트 등록 취소
+				document.onmousemove = null;
+				document.onmouseup = closeDragElement;
+			}	
+
+		}
+
+		draggable( document.getElementById("myDiv1") );
+		draggable( document.getElementById("myDiv2") );
 	</script>
 </body>
 </html>

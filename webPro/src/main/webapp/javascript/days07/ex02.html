@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+<script src="/webPro/resources/cdn-main/example.js"></script>
+<style>
+	span.material-symbols-outlined{
+		vertical-align: text-bottom;
+ 	}
+</style>
+</head>
+<body>
+	<header>
+  		<h1 class="main">
+    		<a href="#">GyeongSeo Home</a>
+  		</h1>
+  		<ul>
+  			<li><a href="#">로그인</a></li>
+  			<li><a href="#">회원가입</a></li>
+  		</ul>
+	</header>
+	<h3>
+		<span class="material-symbols-outlined">view_list</span>
+		javascript days00
+	</h3>
+	<div>
+  		<xmp class="code">
+	[js callback(콜백) 함수]
+	- 다른 함수의 매개변수로 전달되는 함수
+
+  		</xmp>
+
+		<p id="demo"></p>
+
+	</div>
+	
+	<script>
+		/*
+		function disp(text) {
+			$("p#demo").html(text);
+		}
+
+		function first() {
+			disp("AAA");
+		}
+
+		function second() {
+			disp("BBB");
+		}
+		
+		first();
+		second();
+		// BBB
+		*/
+	</script>
+	<script>
+		/*
+		// js 함수가 실행되는 시점을 제어
+		// 예) 1) 계산  2) 계산 결과 출력
+		function disp(result) {
+			$("p#demo").html(result);
+		}
+
+		function calc(n1, n2) {
+			let result = n1 + n2;
+			//return result;
+			disp(result);
+		} 
+
+		// 함수 두 번 호출
+		//let result = calc(10, 20);
+		//disp(result); // 30
+
+		calc(1, 2); // 3
+
+		// [문제 제시]
+		// p#demo 출력 x - alert로 출력 (콜백 함수 사용)
+		*/
+	</script>
+	<script>
+		 // 해결 : 콜백 함수
+		 function disp(result) {
+			$("p#demo").html(result);
+		}
+
+		function dispAlert(result) {
+			alert(result);
+		}
+
+		function calc(n1, n2, callback) {
+			let result = n1 + n2;
+			callback(result);
+		}
+
+		calc(10, 20, disp);
+		calc(10, 20, dispAlert);
+
+	</script>
+</body>
+</html>
