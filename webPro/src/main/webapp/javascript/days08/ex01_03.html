@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+<script src="/webPro/resources/cdn-main/example.js"></script>
+<script src = "cookie.js"></script>
+<style>
+	span.material-symbols-outlined{
+		vertical-align: text-bottom;
+ 	}
+</style>
+</head>
+<body>
+	<header>
+  		<h1 class="main">
+    		<a href="#">GyeongSeo Home</a>
+  		</h1>
+  		<ul>
+  			<li><a href="#">로그인</a></li>
+  			<li><a href="#">회원가입</a></li>
+  		</ul>
+	</header>
+	<h3>
+		<span class="material-symbols-outlined">view_list</span>
+		javascript days00
+	</h3>
+	<div>
+  		<xmp class="code">
+    		
+  		</xmp>
+  		
+		<table border="1" style="background-color: white;width:400px;margin:0 auto">
+		  <tr>
+		    <td><img src="../images/item01.gif" alt="" /></td>
+		    <td><img src="../images/item02.gif" alt="" /></td>
+		    <td><img src="../images/item03.gif" alt="" /></td>
+		 </tr>
+		 <tr>
+		    <td><input type="radio" checked="checked"  name="bgImages" id="item01" value="item01" />item01</td>
+		    <td><input type="radio" name="bgImages"  id="item02" value="item02" />item02</td>
+		    <td><input type="radio" name="bgImages" id="item03" value="item03" />item03</td>
+		 </tr>
+		 </table>
+  		
+	</div>
+	
+	<script>
+		let cname = "bgimg"; // 쿠키에 사용할 이름
+		let cvalue = "item01"; // 쿠키 값
+		let cpath = "/";
+		let expiresDays = 10; // 만료시점 10일 후
+		
+		window.onload = function() {
+			// 이전에 bgimg 쿠키 이름으로 저장된 쿠키가 있는지 확인
+			cvalue = getCookie(cname);
+			if(!cvalue) { // 쿠키가 없는 경우 
+				cvalue = "item01";
+				setCookie(cname, cvalue, cpath, expiresDays);
+			} else { // 쿠키가 존재하는 경우
+				// 해당 라디오 버튼을 체크하는 코드
+				document.getElementById(cvalue).checked = "checked";
+			}
+			
+			document.body.style.backgroundImage = `url(../images/${cvalue}.gif)`;
+			
+			// 라디오 버튼을 새로운 배경이미지로 설정하기 위해서 클릭하면
+			// 1) 쿠키도 새로 저장(수정)
+			// 2) 배경이미지도 새로 설정
+			
+			let rdbs = document.getElementsByName("bgImages");
+			for(let rdb of rdbs) {
+				rdb.onclick = function() {
+					cvalue = event.srcElement.value;
+					setCookie(cname, cvalue, cpath, expiresDays);
+					document.body.style.backgroundImage = `url(../images/${cvalue}.gif)`;
+				}
+			}
+		}
+	</script>
+</body>
+</html>

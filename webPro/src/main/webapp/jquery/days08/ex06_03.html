@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+<script src="/webPro/resources/cdn-main/example.js"></script>
+<style>
+	span.material-symbols-outlined{
+		vertical-align: text-bottom;
+ 	}
+</style>
+<style>
+	#box {
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		background-color: aqua;
+	}
+</style>
+</head>
+<body>
+	<header>
+  		<h1 class="main">
+    		<a href="#">GyeongSeo Home</a>
+  		</h1>   
+  		<ul>
+  			<li><a href="#">로그인</a></li>
+  			<li><a href="#">회원가입</a></li>
+  		</ul>
+	</header>
+	<h3>
+		<span class="material-symbols-outlined">view_list</span>
+		javascript days00
+	</h3>
+	<div>
+  		<xmp class="code">
+	jquery method: animate()
+	
+	- animate() : 대기열(Queue) 기능과 함께 사용할 수 있다.
+	- 대기열(Queue) : FIFO 구조
+  		</xmp>
+  		
+  		<button>Run</button>
+  		
+  		<div id="box">Box</div>
+  		
+	</div>
+	
+	<script>
+		$("button").click(function(event) {
+			$("#box")
+				.animate({height:"300px", opacity:"0.4"}, "slow")
+				.animate({width:"300px", opacity:"0.8"}, "slow")
+				.animate({height:"100px", opacity:"0.4"}, "slow")
+				.animate({width:"100px", opacity:"0.8"}, "slow")
+				.animate({fontSize:"3em"})
+		});	
+	</script>
+</body>
+</html>

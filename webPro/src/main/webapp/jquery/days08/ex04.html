@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+<script src="/webPro/resources/cdn-main/example.js"></script>
+<style>
+	span.material-symbols-outlined{
+		vertical-align: text-bottom;
+ 	}
+</style>
+</head>
+<body>
+	<header>
+  		<h1 class="main">
+    		<a href="#">GyeongSeo Home</a>
+  		</h1>
+  		<ul>
+  			<li><a href="#">로그인</a></li>
+  			<li><a href="#">회원가입</a></li>
+  		</ul>
+	</header>
+	<h3>
+		<span class="material-symbols-outlined">view_list</span>
+		javascript days00
+	</h3>
+	<div>
+  		<xmp class="code">
+    	1. jquery selector == 선택자
+    	   1) *      $("*") == 모든 요소
+    	   2) 아이디명  $("#demo")
+    	   3) 클래스명  $(".active")
+    	   4) 태그명   $("li")
+    	   
+    	   예)
+    	   <li class="active box">item</li>
+    	   => $("li active.box")
+    	   
+    	   h1, h2, h3 {
+    	   }
+    	   => $("h1, h2, h3")
+    	   
+    	   5) :first
+    	      :last
+    	      ex04_02.html
+    	   
+    	   6) :even
+    	   	  :odd
+    	   	  ex04_03.html
+    	   	  
+    	   7) :first-child  :first-of-type
+    	      :last-child   :last-of-type
+    	      :nth-child(n) :nth-of-type(n)
+    	      :nth-last-child(n) :nth-last-of-type(n)
+    	   
+    	   8) :only-child
+    	      :only-of-type
+    	      ex04_04.html
+    	   
+    	   9) :eq(index)   eq()
+    	      :gt(no)
+    	      :lt(no)
+    	      ex04_05.html
+    	   
+    	   10) parent   child
+    	       parent > child
+    	       parent + child
+    	       parent ~ child
+    	   
+    	   11) :not(selector)
+    	       not()
+    	       ex04_06.html
+    	   
+    	   12) :heaer == 모든 hn(h1, h2, h3, ···) 태그
+    	   	   ex04_07.html
+    	   
+    	   13) :animated
+    	       ex04_08.html
+    	   
+    	   14) :focus
+	           ex04_09.html   
+    	   
+    	   15) :has(selector)
+    	       has()
+    	       ex04_10.html
+    	   
+    	   16) :empty
+    	       :parent
+    	       ex04_11.html
+    	   
+    	   17) :root
+    	       :hidden
+    	       :visible
+    	       ex04_12.html
+    	   
+    	   18) [attribute]
+    	       [attribute=value]
+    	       [attribute^=value]
+    	       [attribute$=value]
+    	       [attribute~=value]
+    	       [attribute*=value]
+    	       
+    	       [attribute|=value]
+    	   
+    	   19) :text		input[type=text]
+    	       :input 		input
+    	       :password 	iniput[type=password]
+    	       :radio 		input[type=radio]
+    	       :checkbox 	input[type=checkbox]
+    	       :submit 		input[type=submit]
+    	       :reset 		input[type=reset]
+    	       :button 		input[type=button]
+    	       :image 		input[type=image]
+    	       :file 		input[type=file]
+    	   
+    	   20) :checked 	모든 체크된 요소
+    	       :selected 	선택된 options
+    	       :enabled 	활성화된 요소
+    	       :disabled 	비활성화된 요소
+    	   
+    	   
+    	   
+    	   
+    	   
+    	   
+    	2. action() == jquery method
+  		</xmp>
+	</div>
+	
+	<script>
+	</script>
+</body>
+</html>

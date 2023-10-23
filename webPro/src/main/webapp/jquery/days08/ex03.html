@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="http://localhost/webPro/images/SiSt.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="/webPro/resources/cdn-main/example.css">
+<script src="/webPro/resources/cdn-main/example.js"></script>
+<style>
+	span.material-symbols-outlined{
+		vertical-align: text-bottom;
+ 	}
+</style>
+<script>
+	/* $("p").css({
+		"border":"1px solid gray"
+		, "padding":"10px"
+	}); */
+</script>
+<script>
+	$(function() {
+		// $() == window.jQuery()
+		//$("p")
+		window.jQuery("p")
+		.css({
+			"border":"1px solid red"
+			, "padding":"10px"
+		})
+		.on("click", function() {
+			$(this).hide(1000);
+		});
+	});
+</script>
+</head>
+<body>
+	<header>
+  		<h1 class="main">
+    		<a href="#">GyeongSeo Home</a>
+  		</h1>
+  		<ul>
+  			<li><a href="#">로그인</a></li>
+  			<li><a href="#">회원가입</a></li>
+  		</ul>
+	</header>
+	<h3>
+		<span class="material-symbols-outlined">view_list</span>
+		javascript days00
+	</h3>
+	<div>
+  		<xmp class="code">
+    	문서가 로딩되기 전에 jquery 코드가 실행되면 해당 코드는 적용되지 않음
+    	
+    	- $ 기호는 js 변수를 선언할 때 사용할 수 있는 기호
+    	- 다른 js 라이브러리(프레임워크)를 jquery와 함께 사용하다보면
+    	  $ 충돌이 발생할 수 있음
+    	- jquery $와 다른 js 라이브러리의 $ 기호 충돌
+    	- noConflict() 메소드를 사용해서 $ 식별잘르 jquery에서 사용하지 않도록 설정
+  		</xmp>
+  		
+  		<p>Lorem ipsum dolor sit amet.</p>
+  		<p>Necessitatibus ipsa nisi et incidunt!</p>
+  		<p>Magni sed suscipit tempora placeat?</p>
+  		<p>Corporis perspiciatis quo reprehenderit animi!</p>
+  		<p>Temporibus nihil vitae pariatur ducimus.</p>
+  		<p>Dignissimos excepturi suscipit laudantium. Ratione.</p>
+  		<p>Doloribus ipsum repellendus reprehenderit praesentium.</p>
+  		<p>Eaque iusto aut cumque facilis!</p>
+  		<p>Velit voluptatibus illum provident porro?</p>
+  		<p>Incidunt dolorum cum magnam fuga.</p>
+  		
+	</div>
+	
+	<script>
+		/* $("p").css({
+			"border":"1px solid gray"
+			, "padding":"10px"
+		}); */
+	</script>
+	
+	<script>
+		/* $.noConflict();
+		
+		jQuery(document).ready(function() {
+			// jQuery("p").css();
+		}); */
+	</script>
+	
+	<script>
+		/* var jq = $.noConflict();
+		
+		jq(document).ready(function() {
+			// jQuery("p").css();
+		}); */
+	</script>
+	
+	<script>
+		$.noConflict();
+		// jquery 코딩 블럭 내에서는 $
+		jQuery(document).ready(function($) {
+			
+		})
+	</script>
+</body>
+</html>
